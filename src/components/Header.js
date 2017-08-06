@@ -1,27 +1,61 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import Link from './Link';
 import styled from 'styled-components';
-
-import '../css/typography.css';
 
 const Header = styled.header`
   margin: 0;
-  font-size: ${props => props.isRoot ? `2.5rem` : `2rem`};
+`;
+
+const HeaderContent = styled.div`
+  padding: 1.45rem 1.0875rem;
+`;
+
+const Logo = styled.span`
+  border: 3px solid;
+  font-weight: 500;
+  font-size: 1.5em;
+  @media only screen and (min-width: 720px) {
+    margin-left: 15px;
+  }
+`;
+
+const FirstLetter = styled.span`
+  margin-left: 10px;
+`;
+
+const SecondLetter = styled.span`
+  margin-right: 10px;
+`;
+
+const StyledLink = styled(Link)`
+  font-size: 1em;
+  margin-right: 1.5em;
+  @media only screen and (max-width: 720px) {
+    font-size: 0.8em;
+  }
 `;
 
 class BlogHeader extends Component {
   render() {
     return (
-      <Header id="blog-header" {...this.props}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Partiallogic
-        </Link>
+      <Header id="blog-header">
+        <HeaderContent>
+          <StyledLink id="blog-logo-link" to="/">
+            <Logo id="blog-logo">
+              <FirstLetter>M</FirstLetter>
+              <SecondLetter>H</SecondLetter>
+            </Logo>
+          </StyledLink>
+          <StyledLink id="blog-link" to="/">
+            Blog
+          </StyledLink>
+          <StyledLink id="projects-link" to="/projects">
+            Projects
+          </StyledLink>
+          <StyledLink id="about-link" to="/about">
+            About
+          </StyledLink>
+        </HeaderContent>
       </Header>
     );
   }

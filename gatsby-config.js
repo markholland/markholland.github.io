@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-offline',
+    'gatsby-plugin-sass',
     `gatsby-transformer-sharp`,
     'gatsby-plugin-sharp',
     {
@@ -45,6 +45,7 @@ module.exports = {
         orientation: 'portrait',
         display: 'minimal-ui'
       }
-    }
+    },
+    'gatsby-plugin-offline',
   ],
 }

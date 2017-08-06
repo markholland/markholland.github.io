@@ -10,6 +10,7 @@
     "gatsby-plugin-manifest": "^1.0.1",
     "gatsby-plugin-offline": "^1.0.1",
     "gatsby-plugin-react-helmet": "~1.0.1",
+    "gatsby-plugin-sass": "^1.0.1",
     "gatsby-plugin-sharp": "~1.0.1",
     "gatsby-plugin-styled-components": "^1.0.1",
     "gatsby-remark-autolink-headers": "^1.4.1",
@@ -34,6 +35,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:surge": "rm -rf public/*.html && gatsby build && surge public/",
     "develop": "gatsby develop",
     "preserve": "npm run build",
     "serve": "gatsby serve",
