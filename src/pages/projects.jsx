@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "../components/Hero";
 
-import macbook from "../images/macbook.jpg";
+import macbook from "../images/macbook.png";
 
 import "../styles/content-container.css.scss";
 
 export default () =>
-  <div>
+  (<div>
     <Hero image={macbook} title={"Mark Holland"} subTitle={"Projects"} />
     <div className="content-container">
       <div className="content">
@@ -161,4 +161,4 @@ export default () =>
         </div>
       </div>
     </div>
-  </div>;
+  </div>);
