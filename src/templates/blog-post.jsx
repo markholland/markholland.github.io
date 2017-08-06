@@ -15,7 +15,7 @@ const PostTitle = styled.div`
   font-size: 3em;
   font-weight: bold;
   text-align: center;
-  margin: 10px;
+  margin: 0 0 10px;
   padding: 0;
 `;
 
