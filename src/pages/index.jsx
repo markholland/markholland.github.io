@@ -1,12 +1,11 @@
-import React from 'react';
-import GatsbyLink from 'gatsby-link';
-import Helmet from 'react-helmet';
-import styled from 'styled-components';
+import React from "react";
+import Helmet from "react-helmet";
+import styled from "styled-components";
 
-import Link from '../components/Link';
+import Link from "../components/Link";
 
-import '../styles/index.css.scss';
-import '../styles/content-container.css.scss';
+import "../styles/index.css.scss";
+import "../styles/content-container.css.scss";
 
 const PostPreview = styled.div`
   margin: 0 auto 30px 0;
@@ -16,7 +15,7 @@ const PostPreview = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  border-bottom: 2px solid #EEE;
+  border-bottom: 2px solid #eee;
   &:last-child {
     border-bottom-width: 0;
   }
@@ -44,26 +43,26 @@ export default function Index({ data }) {
   return (
     <div className="content-container">
       <div className="content">
-      {posts
-        .filter(post => post.node.frontmatter.title.length > 0)
-        .map(({ node: post }) => {
-          return (
-            <PostPreview id="blog-post-preview" key={post.id}>
-              <PostTitle id="blog-post-title">
-                <Link to={post.frontmatter.path}>
-                  {post.frontmatter.title}
-                </Link>
-              </PostTitle>
-              <p>
-                {post.excerpt}
-              </p>
-              <Link to={post.frontmatter.path}>Read more</Link>
-              {/* <PostDate id="date">
-                {post.frontmatter.date}
-              </PostDate> */}
-            </PostPreview>
-          );
-        })}
+        {posts
+          .filter(post => post.node.frontmatter.title.length > 0)
+          .map(({ node: post }) => {
+            return (
+              <PostPreview id="blog-post-preview" key={post.id}>
+                <PostTitle id="blog-post-title">
+                  <Link to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </PostTitle>
+                <p>
+                  {post.excerpt}
+                </p>
+                <Link to={post.frontmatter.path}>Read more</Link>
+                {/* <PostDate id="date">
+                  {post.frontmatter.date}
+                </PostDate> */}
+              </PostPreview>
+            );
+          })}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   position: absolute;
@@ -51,8 +51,12 @@ class BlogHeroOverlay extends Component {
     return (
       <Container id="hero-overlay">
         <Content id="content">
-          <OverlayTitle id="overlay-title">{title}</OverlayTitle>
-          <OverlaySubTitle>{subTitle}</OverlaySubTitle>
+          <OverlayTitle id="overlay-title">
+            {title}
+          </OverlayTitle>
+          <OverlaySubTitle>
+            {subTitle}
+          </OverlaySubTitle>
         </Content>
       </Container>
     );

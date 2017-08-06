@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import HeroOverlay from './HeroOverlay';
+import HeroOverlay from "./HeroOverlay";
 
 const HeroImage = styled.div`
   width: 100%;
@@ -22,7 +22,7 @@ class BlogHero extends Component {
   render() {
     return (
       <HeroImage {...this.props}>
-        <HeroOverlay {...this.props}></HeroOverlay>
+        <HeroOverlay {...this.props} />
       </HeroImage>
     );
   }
