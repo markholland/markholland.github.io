@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import favicon from "./favicon.png";
+import favicon from "./favicon.ico";
 
 const BUILD_TIME = new Date().getTime();
 
