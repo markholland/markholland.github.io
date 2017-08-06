@@ -2,6 +2,14 @@ import React from "react";
 import Hero from "../components/Hero";
 
 import macbook from "../images/macbook.png";
+import subcount from "../images/projects/subcount.png";
+import appstore from "../images/projects/badge_appstore-lrg.png";
+import ocw2014 from "../images/projects/ocw-android-2014.png";
+import ocw from "../images/projects/ocw-android.png"
+import wisemonkey from "../images/projects/wisemonkey.png";
+import pandroid from "../images/projects/pandroid-icon.png";
+import playstore from "../images/projects/en-play-badge.png";
+import github from "../images/projects/GitHub_Logo.png"
 
 import "../styles/content-container.css.scss";
 
@@ -28,7 +36,7 @@ export default () =>
           <center>
             <p>
               <img
-                src="https://www.partiallogic.com/images/projects/subcount.png"
+                src={subcount}
                 alt="subcount screen capture"
               />
             </p>
@@ -37,7 +45,7 @@ export default () =>
               target="itunes_store"
             >
               <img
-                src="https://www.partiallogic.com/images/badge_appstore-lrg.png"
+                src={appstore}
                 alt="Download on the App Store"
               />
             </a>
@@ -57,19 +65,19 @@ export default () =>
           <center>
             <p>
               <img
-                src="https://www.partiallogic.com/images/projects/ocw-android-2014.png"
+                src={ocw2014}
                 alt="ocw-android screen capture"
               />
             </p>
             <a href="https://play.google.com/store/apps/details?id=com.partiallogic.ocw_android_2014">
               <img
-                src="https://www.partiallogic.com/images/en-play-badge.png"
+                src={playstore}
                 alt="Get it on Google Play"
               />
             </a>
             <a href="https://github.com/markholland/ocw-android-2014">
               <img
-                src="https://www.partiallogic.com/images/GitHub_Logo.png"
+                src={github}
                 alt="View on Github"
               />
             </a>
@@ -87,13 +95,13 @@ export default () =>
           <center>
             <p>
               <img
-                src="https://www.partiallogic.com/images/projects/wisemonkey.png"
+                src={wisemonkey}
                 alt="wisemonkey app screen capture"
               />
             </p>
             <a href="https://play.google.com/store/apps/details?id=com.fourmaw.wisemonkey.app">
               <img
-                src="https://www.partiallogic.com/images/en-play-badge.png"
+                src={playstore}
                 alt="Get it on Google Play"
               />
             </a>
@@ -117,13 +125,13 @@ export default () =>
           <center>
             <p>
               <img
-                src="https://www.partiallogic.com/images/projects/ocw-android.png"
+                src={ocw}
                 alt="ocw-android screen capture"
               />
             </p>
             <a href="https://github.com/markholland/ocw-android">
               <img
-                src="https://www.partiallogic.com/images/GitHub_Logo.png"
+                src={github}
                 alt="View on Github"
               />
             </a>
@@ -141,19 +149,19 @@ export default () =>
           <center>
             <p>
               <img
-                src="https://www.partiallogic.com/images/projects/pandroid-icon.png"
+                src={pandroid}
                 alt="panroid app icon"
               />
             </p>
             <a href="https://play.google.com/store/apps/details?id=pandroid.agent">
               <img
-                src="https://www.partiallogic.com/images/en-play-badge.png"
+                src={playstore}
                 alt="Get it on Google Play"
               />
             </a>
             <a href="https://github.com/pandorafms/pandorafms/tree/develop/pandora_agents/android/mobile">
               <img
-                src="https://www.partiallogic.com/images/GitHub_Logo.png"
+                src={github}
                 alt="View on Github"
               />
             </a>
