@@ -12,7 +12,7 @@ export default () =>
     <div className="content-container">
       <div className="content">
         <p>
-          I recently entered the Software Engineering field but use this site
+          I work as a Software Engineering but use this site
           for anything I feel like writing about.
         </p>
         <p>
