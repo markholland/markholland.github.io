@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 
 import "../styles/content-container.css.scss";
 
-import lumiere from "../images/lumiere.png";
+import lumiere from "../images/lumiere.jpg";
 import eff from "../images/EffBadge2017.png";
 
 export default () =>

@@ -9,7 +9,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
-import balloons from "../images/balloons.png";
+import balloons from "../images/balloons.jpg";
 
 export default class Template extends React.Component {
   static propTypes = {

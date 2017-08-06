@@ -1,15 +1,15 @@
 import React from "react";
 import Hero from "../components/Hero";
 
-import macbook from "../images/macbook.png";
-import subcount from "../images/projects/subcount.png";
-import appstore from "../images/projects/badge_appstore-lrg.png";
-import ocw2014 from "../images/projects/ocw-android-2014.png";
-import ocw from "../images/projects/ocw-android.png"
-import wisemonkey from "../images/projects/wisemonkey.png";
-import pandroid from "../images/projects/pandroid-icon.png";
-import playstore from "../images/projects/en-play-badge.png";
-import github from "../images/projects/GitHub_Logo.png"
+import macbook from "../images/macbook.jpg";
+import subcount from "../images/projects/subcount.jpg";
+import appstore from "../images/projects/badge_appstore-lrg.jpg";
+import ocw2014 from "../images/projects/ocw-android-2014.jpg";
+import ocw from "../images/projects/ocw-android.jpg"
+import wisemonkey from "../images/projects/wisemonkey.jpg";
+import pandroid from "../images/projects/pandroid-icon.jpg";
+import playstore from "../images/projects/en-play-badge.jpg";
+import github from "../images/projects/GitHub_Logo.jpg"
 
 import "../styles/content-container.css.scss";
 

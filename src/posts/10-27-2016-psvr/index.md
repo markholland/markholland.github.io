@@ -3,7 +3,7 @@ path: "/psvr.html"
 date: "2016-10-27T03:49:16.408Z"
 title: "My PSVR experience"
 tags: ['videogames']
-image: "psvr.png"
+image: "psvr.jpg"
 ---
 
 Up until now I'd always discarded **Virtual Reality** as an expensive gimmick. But after how well received **Sony's** offering has been I came to the conclusion I wanted to try it out. Now as often is the case with recently released and well received technology products. Quickly came the realisation that even though I had decided I would be purchasing the device, actually finding a retailer with stock is easier said than done.
