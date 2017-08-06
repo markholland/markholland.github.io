@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import "../styles/content-container.css.scss";
 
 import lumiere from "../images/lumiere.png";
+import eff from "../images/EffBadge2017.png";
 
 export default () =>
   (<div>
@@ -38,7 +39,7 @@ export default () =>
           >
             <img
               style={{ border: 0 }}
-              src="https://www.partiallogic.com/images/EffBadge2017.png"
+              src={eff}
               alt="EFF Members badge"
             />
           </a>
