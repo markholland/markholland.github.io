@@ -2,7 +2,7 @@
 path: "/psvr.html"
 date: "2016-10-27T03:49:16.408Z"
 title: "My PSVR experience"
-tags: ['videogames']
+tags: ["tag"]
 image: "psvr.jpg"
 ---
 

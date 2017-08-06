@@ -2,7 +2,7 @@
 path: "/best-of-2015-music.html"
 date: "2016-01-11T03:49:16.408Z"
 title: "Best of 2015: Music"
-tags: ['music']
+tags: ["tag"]
 image: "music.png"
 ---
 
