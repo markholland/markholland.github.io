@@ -50,9 +50,9 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "clean": "rm -rf public/*.html",
+    "clean:public": "rm -rf public/*.html",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:surge": "yarn clean && gatsby build && surge public/",
+    "deploy:surge": "yarn clean:public && gatsby build && surge public/",
     "develop": "gatsby develop",
     "preserve": "npm run build",
     "serve": "gatsby serve",
