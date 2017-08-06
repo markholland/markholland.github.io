@@ -1,1 +1,1 @@
-Blog using Gatsby
+This is a WIP port of [partiallogic](https://www.partiallogic.com) from Jekyll to GatsbyJS
