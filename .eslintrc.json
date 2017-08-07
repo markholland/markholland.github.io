@@ -1,10 +1,12 @@
 {
   "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
   "plugins": ["react", "jsx-a11y", "import"],
   "rules": {
     "react/prefer-stateless-function": "off",
     "react/prop-types": "off",
-    "react/no-danger": "off"
+    "react/no-danger": "off",
+    "strict": 0
   },
   "settings": {
     "import/core-modules": []
