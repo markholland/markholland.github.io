@@ -1,12 +1,11 @@
+/* eslint-disable global-require, import/no-webpack-loader-syntax, import/no-unresolved */
 import React from "react";
 import PropTypes from "prop-types";
 
 import favicon from "./favicon.ico";
 
-const BUILD_TIME = new Date().getTime();
-
 export default class HTML extends React.Component {
-  static propTypes = {
+  static PropTypes = {
     body: PropTypes.string
   };
 

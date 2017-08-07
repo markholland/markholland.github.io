@@ -29,13 +29,13 @@ const PostTitle = styled.h1`
   }
 `;
 
-const PostDate = styled.span`
-  font-size: 1em;
-  font-weight: italic;
-  color: #555;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-`;
+// const PostDate = styled.span`
+//   font-size: 1em;
+//   font-weight: italic;
+//   color: #555;
+//   text-transform: uppercase;
+//   margin-bottom: 1rem;
+// `;
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
@@ -44,8 +44,8 @@ export default function Index({ data }) {
       <div className="content">
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
+          .map(({ node: post }) => 
+            (
               <PostPreview id="blog-post-preview" key={post.id}>
                 <PostTitle id="blog-post-title">
                   <Link to={post.frontmatter.path}>
@@ -60,27 +60,28 @@ export default function Index({ data }) {
                   {post.frontmatter.date}
                 </PostDate> */}
               </PostPreview>
-            );
-          })}
+            )
+          )}
       </div>
     </div>
   );
 }
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
+export const pageQuery = ({ graphql }) => 
+  graphql`
+    query IndexQuery {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        edges {
+          node {
+            excerpt(pruneLength: 250)
+            id
+            frontmatter {
+              title
+              date(formatString: "MMMM DD, YYYY")
+              path
+            }
           }
         }
       }
     }
-  }
-`;
+  `;

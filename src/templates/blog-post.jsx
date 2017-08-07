@@ -5,7 +5,6 @@ import BackIcon from "react-icons/lib/fa/chevron-left";
 import ForwardIcon from "react-icons/lib/fa/chevron-right";
 
 import Link from "../components/Link";
-import Tags from "../components/Tags";
 import Hero from "../components/Hero";
 
 import "../styles/blog-post.css.scss";
@@ -64,23 +63,24 @@ export default function Template({ data, pathContext }) {
   );
 }
 
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        tags
-        title
-        image {
-          childImageSharp {
-            resize(width: 1500, height: 1500) {
-              src
+export const pageQuery = ({ graphql }) => 
+  graphql`
+    query BlogPostByPath($path: String!) {
+      markdownRemark(frontmatter: { path: { eq: $path } }) {
+        html
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          path
+          tags
+          title
+          image {
+            childImageSharp {
+              resize(width: 1500, height: 1500) {
+                src
+              }
             }
           }
         }
       }
     }
-  }
-`;
+  `;

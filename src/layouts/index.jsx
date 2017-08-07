@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "gatsby-link";
 import Helmet from "react-helmet";
 
 import "../styles/base.css.scss";
@@ -12,7 +11,7 @@ import Footer from "../components/Footer";
 import balloons from "../images/balloons.jpg";
 
 export default class Template extends React.Component {
-  static propTypes = {
+  static PropTypes = {
     children: PropTypes.func
   };
 

@@ -12,10 +12,10 @@ const Container = styled.footer`
 `;
 
 export default function Footer() {
-  const colors = {
-    color: `rgba(255, 255, 255, 0.6)`,
-    hoverColor: `rgba(255, 255, 255, 1)`
-  };
+  // const colors = {
+  //   color: `rgba(255, 255, 255, 0.6)`,
+  //   hoverColor: `rgba(255, 255, 255, 1)`
+  // };
   return (
     <Container id="footer-container">
       © 2017 Mark Holland
