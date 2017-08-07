@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import "../styles/tags.css.scss";
-
 export default function Tags({ list = [] }) {
   return (
     <ul className="tag-list">
