@@ -8,14 +8,15 @@ $fontheadings: Helvetica, Arial, sans-serif;
 $text: #21272d;
 $textmuted: #848484;
 $accent: #2077b2;
-$border_color: #DDD;
+$border_color: #ddd;
 
 @mixin vertical_aligning_container {
-  &:before {
+  &::before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -.34em; // remove space taken up and prevent word-wrapping
-  }            
+    // remove space taken up and prevent word-wrapping
+    margin-right: -0.34em;
+  }
 }
