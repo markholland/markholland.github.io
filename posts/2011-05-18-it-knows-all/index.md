@@ -3,7 +3,7 @@ path: "/it-knows-all.html"
 date: "2011-05-18T12:00:00+00:00"
 title: "It knows all"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Go back 15 years in your life, unless you were on the bleeding edge you probably didn’t have an internet connection, so when you’d think, I wonder why this happens, I wonder what that’s called, what film have I seen him in before? Not alot probably.

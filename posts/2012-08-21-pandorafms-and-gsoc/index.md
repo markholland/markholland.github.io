@@ -3,7 +3,7 @@ path: "/pandora-fms-gsoc.html"
 date: "2012-08-21T12:00:00+00:00"
 title: "PandoraFMS and GSoC"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 From SourceForge blogs:

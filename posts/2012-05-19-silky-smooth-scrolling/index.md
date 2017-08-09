@@ -3,7 +3,7 @@ path: "/silky-smooth-scrolling"
 date: "2012-05-19T12:00:00+00:00"
 title: "Silky Smooth Scrolling"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 If there was something that stood out the most to people when they have a go on a mac it’s how damn smooth the scrolling is, especially 2 finger scrolling using the trackpad. It didn’t take long for oems to realise they ought to add this functionality as Microsoft certainly wasn’t going to. But this turned out to be such an awfuly jerky, jumpy experience that most would deactivate the option, until now.

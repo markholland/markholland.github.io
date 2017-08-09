@@ -3,7 +3,7 @@ path: "/arm64.html"
 date: "2013-09-29T12:00:00+00:00"
 title: "AArch64"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Earlier this month, **Apple** unveiled their latest iPhone and one of the most interesting things from the keynote was the fact that they have now moved to a 64 bit CPU.

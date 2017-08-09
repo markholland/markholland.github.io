@@ -14,7 +14,7 @@ A lot of work goes into making music, but so much of it can be lost through poor
 
 My journey began several years ago but it wasn't until last year when I was finally able to seriously invest in my setup. It started with some headphones from the brand [Grado](http://www.gradolabs.com/index.php), in particular the [SR80 model](http://www.gradolabs.com/headphones/prestige-series/item/1-sr80e).
 
-![Grado SR80](/images/posts/gradosr80.jpg)
+![Grado SR80](gradosr80.jpg)
 
 The special thing about these headphones is that they are open backed which provides an incredibly wide soundscape that puts you in the center of the music. An important thing to note though is that being open backed these headphones are not suitable for use in public as there is a substantial amount of sound leakage.
 
@@ -26,7 +26,7 @@ That was until I came across an Indiegogo project for a USB DAC that I could aff
 
 The downside to kickstarter, indiegogo, etc. style purchases is that at the time you're only buying into the idea, next you have to wait for the actual product to be created before it can be shipped. But after several months of anxiously waiting I now have my hands on a silver ZuperDAC
 
-![photo](./zuperdac.jpg)
+![photo](zuperdac.jpg)
 
 Setting up the ZuperDAC couldn't be simpler, all it takes is plugging one end into a USB port on your computer and then your headphones into the other end. The *USB Audio* output is automatically detected by **OS X** so all you have to do is press play and start looking out for more hidden sounds in your music collection.
 

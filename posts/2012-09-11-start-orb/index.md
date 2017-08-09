@@ -3,7 +3,7 @@ path: "/start-orb.html"
 date: "2012-09-11T12:00:00+00:00"
 title: "Start Orb"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Today is a quick post on adding that personal touch to your Windows 7 PC, changing the start menu orb!

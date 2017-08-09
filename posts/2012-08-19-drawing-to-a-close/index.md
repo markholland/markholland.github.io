@@ -3,7 +3,7 @@ path: "/drawing-to-a-close-gsoc.html"
 date: "2012-08-19T12:00:00+00:00"
 title: "Drawing to a close"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 This years Google Summer of Code is drawing to a close, I’ve finalised all the functionality of my project and now it’s crossing fingers that I don’t hear back about any bugs.

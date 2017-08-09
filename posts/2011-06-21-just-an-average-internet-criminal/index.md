@@ -3,7 +3,7 @@ path: "/just-an-average.html"
 date: "2011-06-21T12:00:00+00:00"
 title: "Just an average internet criminal"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 It won’t be long until I’ll seriously consider disconnecting from the internet and never coming back for fear of imprisonment.

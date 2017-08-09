@@ -1,9 +1,9 @@
 ---
-path: "droicon-mad.html"
+path: "/droicon-mad.html"
 date: "2013-12-10T12:00:00+00:00"
 title: "Droidcon"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Today I attended a series of talks related to Android at the **Madrid** edition of DroidCon 2013.

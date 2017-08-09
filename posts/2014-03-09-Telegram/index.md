@@ -1,9 +1,9 @@
 ---
-path: "telegram.html"
+path: "/telegram.html"
 date: "2014-03-09T12:00:00+00:00"
 title: "FOSS isn't enough STOP Trust is everything STOP"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 So with the recent news of **Facebook** acquiring the Chat service **Whatsapp**, many felt they had to find an alternative. I don't blame them, if a company thinks buying another company is worth x money then they expect to make a lot more than x money from owning it.

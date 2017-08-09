@@ -3,7 +3,7 @@ path: "/phase-one-complete"
 date: "2012-09-17T12:00:00+00:00"
 title: "Phase one complete"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 ![pandroid icon](pandroid-icon.png)

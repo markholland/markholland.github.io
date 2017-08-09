@@ -3,7 +3,7 @@ path: "/foxy-utils.html"
 date: "2012-06-22T12:00:00+00:00"
 title: "FoxyUtils"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Today I’ve got a neat little service to share that I’ve found useful on those very rare ocassions where I’ve needed to manipulate pdfs that I didn’t create myself.

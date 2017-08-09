@@ -3,7 +3,7 @@ path: "/fake-raspberry.html"
 date: "2013-01-13T12:00:00+00:00"
 title: "Not all Raspberry's are created equal"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 I'm not an expert on the Raspberry Pi, I barely find time to use mine except for watching videos on our old cathode TV at home. But I do get a lot of people asking me whether they should buy one, this has recently become less about whether they want a cheap Linux computer as to why the Raspberry Pi should be the cheap Linux computer they buy.

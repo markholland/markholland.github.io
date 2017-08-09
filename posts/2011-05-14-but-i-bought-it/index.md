@@ -1,9 +1,9 @@
 ---
-path: "but-i-bought-it.html"
+path: "/but-i-bought-it.html"
 date: "2011-05-14T12:00:00+00:00"
 title: "But I bought it"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Ownership, it’s a tricky thing in the digital era but things could and should be better.

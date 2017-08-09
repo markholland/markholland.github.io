@@ -3,7 +3,7 @@ path: "/sumatra.html"
 date: "2011-05-22T12:00:00+00:00"
 title: "Sumatra who?"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 I’ve decided to take this site in a slightly different direction, It’s going to be more computer oriented i.e. tutorials, recommended programs, recommended purchases, etc.

@@ -3,7 +3,7 @@ path: "/mac-g4.html"
 date: "2013-04-05T12:00:00+00:00"
 title: "I love doing stuff like this"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 I was lucky enough to receive some old tech to tinker with, to be exact, a 2001 Power Mac G4. Now this is a pretty old computer by today's standards(they hadn't even switched to intel yet, hence the name Power Mac as it uses a [PowerPC processor](http://en.wikipedia.org/wiki/PowerPC)) but it still chugs along with OSX and is perfectly usable. It's also an interesting piece of hardware with it's signature design and classic looks while holding some unique engineering ideas.

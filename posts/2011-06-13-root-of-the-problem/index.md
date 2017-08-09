@@ -3,7 +3,7 @@ path: "/root-of-the-problem.html"
 date: "2011-06-13T12:00:00+00:00"
 title: "Root of the problem"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 I recently rooted my htc desire.

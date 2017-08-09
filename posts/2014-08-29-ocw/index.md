@@ -3,7 +3,7 @@ path: "/ocw-2014.html"
 date: "2014-08-29T12:00:00+00:00"
 title: "Android revisited"
 tags: ["tag"]
-image: "en-play-badge.jpg"
+image: "balloons.jpg"
 ---
 
 During the summer of 2014 I have been making the most of not working by trying out lots of different technologies, Node.js, Verilog, Apple's new hotness Swift and improving on my still novice status as an Android developer.

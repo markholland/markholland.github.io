@@ -3,7 +3,7 @@ path: "/kolibri-os.html"
 date: "2012-12-23T12:00:00+00:00"
 title: "Kolibri OS"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 To round off **2012** I'm going to finally get around to mentioning an amazing project I stumbled across several years ago.

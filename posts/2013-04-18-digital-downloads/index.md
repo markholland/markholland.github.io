@@ -3,7 +3,7 @@ path: "/digital-downloads.html"
 date: "2013-04-18T12:00:00+00:00"
 title: "Digital Downloads"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 There's a lot to talk about when we bring up the concept of digital media, something I have many opinions on. Today I'm only going to go into one facet of this heated debate.

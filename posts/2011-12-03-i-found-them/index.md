@@ -3,7 +3,7 @@ path: "/i-found-them.html"
 date: "2011-12-03T12:00:00+00:00"
 title: "I found them"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 Today is the opening day of the Apple Store here in Valencia.

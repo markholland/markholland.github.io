@@ -3,7 +3,7 @@ path: "/best-of-2012.html"
 date: "2012-12-27T12:00:00+00:00"
 title: "Best of 2012"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 This year has been a long one so I thought it deserved a brief rundown of what caught my attention the most, I'll probably neglect some great things from early on in the year but that's the nature of a list compiled so long afterwards.

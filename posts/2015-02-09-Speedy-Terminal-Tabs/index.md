@@ -6,7 +6,7 @@ tags: ["tag"]
 image: "terminal.png"
 ---
 
-![terminal screen capture](http://partiallogic.com/images/posts/terminal.png)
+![terminal screen capture](terminal.png)
 
 Here's a quick tip I just came across and I'm already kicking myself for not having looked for it before. You may have noticed that over time when using **terminal.app** that opening a new tab can take a fair amount of time. This can sometimes completely destroy your workflow while you agonizingly wait to be able to start typing.
 

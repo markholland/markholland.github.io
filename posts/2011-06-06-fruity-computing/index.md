@@ -3,7 +3,7 @@ path: "/fruity-computing.html"
 date: "2011-06-06T12:00:00+00:00"
 title: "Fruity computing"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 I’m not anti-apple, not even in the slightest. I’ve owned apple products ever since the first iPod Shuffle.

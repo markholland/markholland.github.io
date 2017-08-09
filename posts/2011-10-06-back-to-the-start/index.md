@@ -3,7 +3,7 @@ path: "/back-to-the-start.html"
 date: "2011-10-06T12:00:00+00:00"
 title: "Back to the start"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 The first computer I ever used was a Macintosh Classic.

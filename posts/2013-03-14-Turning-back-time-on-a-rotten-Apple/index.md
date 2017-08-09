@@ -3,7 +3,7 @@ path: "/rotten-apple.html"
 date: "2013-03-14T12:00:00+00:00"
 title: "Turning back time on a rotten Apple"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 You know what I haven't done in a while? Let you guys know how much I'm enjoying having a Macbook and the way it has improved my productivity and outlook on what a computer experience should be like.

@@ -1,9 +1,9 @@
 ---
-path: "best-of-2013.html"
+path: "/best-of-2013.html"
 date: "2014-01-01T12:00:00+00:00"
 title: "Best of 2013"
 tags: ["tag"]
-image: "../images/balloons.jpg"
+image: "balloons.jpg"
 ---
 
 ###**Best Movies:** 
