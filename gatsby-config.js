@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/posts`,
         name: "posts"
       }
     },
@@ -21,7 +21,8 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
+              maxWidth: 1200
             }
           },
           "gatsby-remark-prismjs",
@@ -38,12 +39,20 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: `Partiallogic`,
-        description: "The blog of the developer, Mark Holland",
         short_name: "Partiallogic",
-        background_color: "white",
-        theme_color: "#002635",
+        start_url: "/",
+        description: "The blog of the developer, Mark Holland",
+        background_color: "#ffffff",
+        theme_color: "#2077b2",
         orientation: "portrait",
-        display: "minimal-ui"
+        display: "minimal-ui",
+        icons: [
+          {
+            src: "/logos/logo-192.png",
+            sizes: "192x192",
+            type: "image/png"
+          }
+        ]
       }
     },
     "gatsby-plugin-offline"
