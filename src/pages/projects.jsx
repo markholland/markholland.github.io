@@ -1,15 +1,15 @@
 import React from "react";
 import Hero from "../components/Hero";
 
-import macbook from "../images/macbook.jpg";
-import subcount from "../images/projects/subcount.jpg";
-import appstore from "../images/projects/badge_appstore-lrg.jpg";
-import ocw2014 from "../images/projects/ocw-android-2014.jpg";
-import ocw from "../images/projects/ocw-android.jpg"
-import wisemonkey from "../images/projects/wisemonkey.jpg";
-import pandroid from "../images/projects/pandroid-icon.jpg";
-import playstore from "../images/projects/en-play-badge.jpg";
-import github from "../images/projects/GitHub_Logo.jpg"
+import macbook from "../../static/macbook.jpg";
+import subcount from "../../static/projects/subcount.jpg";
+import appstore from "../../static/projects/badge_appstore-lrg.jpg";
+import ocw2014 from "../../static/projects/ocw-android-2014.jpg";
+import ocw from "../../static/projects/ocw-android.jpg"
+import wisemonkey from "../../static/projects/wisemonkey.jpg";
+import pandroid from "../../static/projects/pandroid-icon.jpg";
+import playstore from "../../static/projects/en-play-badge.jpg";
+import github from "../../static/projects/GitHub_Logo.jpg"
 
 import "../styles/content-container.css.scss";
 
@@ -34,12 +34,10 @@ export default () =>
             here
           </a>.
           <center>
-            <p>
-              <img
-                src={subcount}
-                alt="subcount screen capture"
-              />
-            </p>
+            <img
+              src={subcount}
+              alt="subcount screen capture"
+            />
             <a
               href="https://itunes.apple.com/us/app/sub-count/id977966794?mt=8&uo=6&at=&ct="
               target="itunes_store"
