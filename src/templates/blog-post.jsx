@@ -7,8 +7,8 @@ import ForwardIcon from "react-icons/lib/fa/chevron-right";
 import Link from "../components/Link";
 import Hero from "../components/Hero";
 
-import "../styles/blog-post.scss";
-import "../styles/content-container.scss";
+import "../scss/blog-post.scss";
+import "../scss/content-container.scss";
 
 const PostTitle = styled.div`
   font-size: 1.5em;

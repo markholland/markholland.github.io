@@ -11,7 +11,7 @@ import pandroid from "../../static/projects/pandroid-icon.jpg";
 import playstore from "../../static/projects/en-play-badge.jpg";
 import github from "../../static/projects/GitHub_Logo.jpg"
 
-import "../styles/content-container.scss";
+import "../scss/content-container.scss";
 
 export default () =>
   (<div>
