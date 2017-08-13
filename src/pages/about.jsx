@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 
-import "../styles/content-container.css.scss";
+import "../styles/content-container.css";
 
 import lumiere from "../../static/lumiere.jpg";
 import eff from "../../static/EffBadge2017.png";

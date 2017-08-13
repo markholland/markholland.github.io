@@ -16,7 +16,6 @@ ratings:
     - "**.jsx"
     - "**.css"
     - "**.less"
-    - "**.scss"
     - "**.sss"
 
 exclude_paths:

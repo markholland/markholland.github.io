@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import Link from "../components/Link";
 
-import "../styles/index.css.scss";
-import "../styles/content-container.css.scss";
+import "../styles/index.css";
+import "../styles/content-container.css";
 
 const PostPreview = styled.div`
   margin: 0 auto 30px 0;

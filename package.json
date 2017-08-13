@@ -64,7 +64,7 @@
     "test": "echo \"Should probably write some tests!\"",
     "lint:js": "eslint --ext .js,.jsx --ignore-pattern public,static .",
     "lint:md": "remark src/posts/",
-    "lint:style": "stylelint src/**/*.scss",
+    "lint:style": "stylelint src/**/*.css",
     "format:js": "prettier '**/*.{js,jsx}' --write",
     "write-good": "write-good $(glob 'src/posts/**/*.md')"
   },
