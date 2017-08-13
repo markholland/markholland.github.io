@@ -11,19 +11,40 @@ import "../styles/blog-post.scss";
 import "../styles/content-container.scss";
 
 const PostTitle = styled.div`
-  font-size: 3em;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   margin: 0 0 10px;
-  padding: 0;
+`;
+
+const PostDate = styled.h2`
+  font-size: 1em;
 `;
 
 const PostContent = styled.div`
-  font-size: 1.0em;
+  font-size: 0.8em;
   line-height: 1.5;
   color: #21272d;
   font-weight: 400;
   margin: 0 0 1.5em;
+`;
+
+const LinkPrev = styled(Link)`
+  float: left;
+  padding-left: 30px;
+  `;
+  
+  const LinkNext = styled(Link)`
+  float: right;
+  padding-right: 30px;
+`;
+
+const NavLinkText = styled.div`
+display: none;
+@media only screen and (min-width: 720px) {
+  display: inline-block;
+  padding: 0 5px;
+}
 `;
 
 export default function Template({ data, pathContext }) {
@@ -39,9 +60,9 @@ export default function Template({ data, pathContext }) {
           <PostTitle id="title">
             {post.frontmatter.title}
           </PostTitle>
-          <h2 className="date">
+          <PostDate className="date">
             {post.frontmatter.date}
-          </h2>
+          </PostDate>
           <PostContent
             id="blog-post-content"
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -49,13 +70,15 @@ export default function Template({ data, pathContext }) {
           {/* <Tags list={post.frontmatter.tags || []} /> */}
           <div className="navigation">
             {prev &&
-              <Link className="link prev" to={prev.frontmatter.path}>
-                <BackIcon /> {prev.frontmatter.title}
-              </Link>}
+              <LinkPrev to={prev.frontmatter.path}>
+                <BackIcon />
+                <NavLinkText>{prev.frontmatter.title}</NavLinkText>
+              </LinkPrev>}
             {next &&
-              <Link className="link next" to={next.frontmatter.path}>
-                {next.frontmatter.title} <ForwardIcon />
-              </Link>}
+              <LinkNext to={next.frontmatter.path}>
+                <NavLinkText>{next.frontmatter.title}</NavLinkText>
+                <ForwardIcon />
+              </LinkNext>}
           </div>
         </div>
       </div>
