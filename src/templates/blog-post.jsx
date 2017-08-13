@@ -8,7 +8,7 @@ import Link from "../components/Link";
 import Hero from "../components/Hero";
 
 import "../styles/blog-post.scss";
-import "../styles/content-container.css";
+import "../styles/content-container.scss";
 
 const PostTitle = styled.div`
   font-size: 3em;
