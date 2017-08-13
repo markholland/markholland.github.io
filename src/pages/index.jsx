@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Link from "../components/Link";
 
-import "../styles/index.css";
+import "../styles/index.scss";
 import "../styles/content-container.css";
 
 const PostPreview = styled.div`
