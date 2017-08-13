@@ -1,8 +1,8 @@
-@import "globals.scss";
+/* @import "globals.scss"; */
 
 .link {
   display: inline-block;
-  color: $accent;
+  color: #2077b2;
   font-weight: 600;
   text-decoration: none;
   position: relative;
@@ -26,7 +26,7 @@
 } */
 
 .link:hover {
-  color: darken($accent, 8%);
+  color: darken(#2077b2, 8%);
 }
 
 /*
