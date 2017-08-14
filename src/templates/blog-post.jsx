@@ -34,7 +34,7 @@ const LinkPrev = styled(Link)`
   padding-left: 30px;
   `;
   
-  const LinkNext = styled(Link)`
+const LinkNext = styled(Link)`
   float: right;
   padding-right: 30px;
 `;
