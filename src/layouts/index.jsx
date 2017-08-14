@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
-import "../styles/base.scss";
+import "../scss/base.scss";
 
 import Header from "../components/Header";
 import Hero from "../components/Hero";

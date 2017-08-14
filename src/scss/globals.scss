@@ -11,13 +11,13 @@ $accent: #2077b2;
 $border_color: #ddd;
 
 // TODO use this rather than manually in component
-// @mixin vertical_aligning_container {
-//   &::before {
-//     content: '';
-//     display: inline-block;
-//     height: 100%;
-//     vertical-align: middle;
-//     // remove space taken up and prevent word-wrapping
-//     margin-right: -0.34em;
-//   }
-// }
+@mixin vertical_aligning_container {
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    // remove space taken up and prevent word-wrapping
+    margin-right: -0.34em;
+  }
+}
