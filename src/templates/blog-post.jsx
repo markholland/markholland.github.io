@@ -31,19 +31,19 @@ const PostContent = styled.div`
 
 const LinkPrev = styled(Link)`
   float: left;
-  padding-left: 30px;
-  `;
+  padding: 20px 30px;
+`;
   
-const LinkNext = styled(Link)`
+  const LinkNext = styled(Link)`
   float: right;
-  padding-right: 30px;
+  padding: 20px 30px;
 `;
 
 const NavLinkText = styled.div`
-display: none;
-@media only screen and (min-width: 720px) {
-  display: inline-block;
-  padding: 0 5px;
+  display: none;
+  @media only screen and (min-width: 720px) {
+    display: inline-block;
+    padding: 0 5px;
 }
 `;
 
