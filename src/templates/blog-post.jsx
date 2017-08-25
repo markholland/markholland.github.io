@@ -53,6 +53,12 @@ const NavLinkText = styled.div`
   @media only screen and (min-width: 720px) {
     display: inline-block;
     padding: 0 5px;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    line-height: 20px;
   }
 `;
 
