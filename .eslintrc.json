@@ -1,7 +1,7 @@
 {
   "extends": ["airbnb", "prettier"],
   "parser": "babel-eslint",
-  "plugins": ["react", "jsx-a11y", "import"],
+  "plugins": ["react", "jsx-a11y", "import", "jest"],
   "rules": {
     "react/prefer-stateless-function": "off",
     "react/prop-types": "off",
@@ -12,6 +12,7 @@
     "import/core-modules": []
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   }
 }
