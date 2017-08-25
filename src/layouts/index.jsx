@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
+import styled from "styled-components";
+
 import "../scss/base.scss";
 
 import Header from "../components/Header";
@@ -9,6 +11,16 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
 import balloons from "../../static/balloons.jpg";
+
+const SiteWrapper = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+`;
+
+const SiteContent = styled.div`
+  flex: 1;
+`;
 
 export default class Template extends React.Component {
   static PropTypes = {
@@ -32,7 +44,7 @@ export default class Template extends React.Component {
     }
 
     return (
-      <div>
+      <SiteWrapper>
         <Helmet
           title="Partiallogic"
           meta={[
@@ -45,11 +57,11 @@ export default class Template extends React.Component {
         />
         <Header />
         {hero}
-        <div>
+        <SiteContent>
           {this.props.children()}
-        </div>
+        </SiteContent>
         <Footer />
-      </div>
+      </SiteWrapper>
     );
   }
 }

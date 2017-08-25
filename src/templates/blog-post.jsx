@@ -15,10 +15,16 @@ const PostTitle = styled.div`
   font-weight: bold;
   text-align: center;
   margin: 0 0 10px;
+  @media only screen and (min-width: 720px) {
+    font-size: 1.8em;
+  }
 `;
 
 const PostDate = styled.h2`
   font-size: 1em;
+  @media only screen and (min-width: 720px) {
+    font-size: 1.2em;
+  }
 `;
 
 const PostContent = styled.div`
@@ -27,24 +33,33 @@ const PostContent = styled.div`
   color: #21272d;
   font-weight: 400;
   margin: 0 0 1.5em;
+  @media only screen and (min-width: 720px) {
+    font-size: 1.0em;
+  }
 `;
 
 const LinkPrev = styled(Link)`
   float: left;
-  padding-left: 30px;
-  `;
+  padding: 20px 30px;
+`;
   
-const LinkNext = styled(Link)`
+  const LinkNext = styled(Link)`
   float: right;
-  padding-right: 30px;
+  padding: 20px 30px;
 `;
 
 const NavLinkText = styled.div`
-display: none;
-@media only screen and (min-width: 720px) {
-  display: inline-block;
-  padding: 0 5px;
-}
+  display: none;
+  @media only screen and (min-width: 720px) {
+    display: inline-block;
+    padding: 0 5px;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    line-height: 20px;
+  }
 `;
 
 export default function Template({ data, pathContext }) {
