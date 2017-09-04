@@ -1,7 +1,19 @@
 import React from "react";
+import styled from 'styled-components';
+
+import Hero from '../components/Hero';
+
+const Container = styled.div`
+  margin: 30px;
+`;
 
 export default () =>
-  (<div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&apos;t exist...</p>
-  </div>);
+  ( 
+    <div>
+      <Hero></Hero>
+      <Container>
+        <h1>NOT FOUND</h1>
+        <p>You just hit a route that doesn&apos;t exist...</p>
+      </Container>
+    </div>
+  );
