@@ -13,7 +13,7 @@ export default () =>
       <Hero></Hero>
       <Container>
         <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&apos;t exist...</p>
+        <p>You just hit a page that doesn&apos;t exist...</p>
       </Container>
     </div>
   );
