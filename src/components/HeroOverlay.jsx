@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import Social from './Social';
+
 const Container = styled.div`
   position: absolute;
   text-align: center;
@@ -48,6 +50,7 @@ class BlogHeroOverlay extends Component {
   render() {
     const title = this.props.title;
     const subTitle = this.props.subTitle;
+    const SocialIcons = title || subTitle ? <Social /> : null;
     return (
       <Container id="hero-overlay">
         <Content id="content">
@@ -57,6 +60,7 @@ class BlogHeroOverlay extends Component {
           <OverlaySubTitle>
             {subTitle}
           </OverlaySubTitle>
+          {SocialIcons}
         </Content>
       </Container>
     );
