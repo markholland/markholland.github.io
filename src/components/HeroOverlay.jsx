@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import Social from './Social';
+
 const Container = styled.div`
   position: absolute;
   text-align: center;
@@ -57,6 +59,7 @@ class BlogHeroOverlay extends Component {
           <OverlaySubTitle>
             {subTitle}
           </OverlaySubTitle>
+          <Social />
         </Content>
       </Container>
     );

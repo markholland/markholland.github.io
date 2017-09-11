@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Social from './Social';
+
 const Container = styled.footer`
   display: flex;
   width: 100%;
@@ -14,13 +16,13 @@ const Container = styled.footer`
 
 export default function Footer() {
   // const colors = {
-  //   color: `rgba(255, 255, 255, 0.6)`,
+  //   color: `rgba(33, 39, 45, 0.6)`,
   //   hoverColor: `rgba(255, 255, 255, 1)`
   // };
   return (
     <Container id="footer-container">
       © 2017 Mark Holland
-      {/* <SocialIcons flexDirection="row" width="240px" {...colors} /> */}
+      {/* <Social {...colors} /> */}
     </Container>
   );
 }
