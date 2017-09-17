@@ -10,7 +10,7 @@ const Container = styled.div`
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: ${props => (props.title || props.subTitle ? 'rgba(0, 0, 0, 0.3)' : 'rgba(0, 0, 0, 0)')};
   &:before {
     content: '';
     display: inline-block;
@@ -52,7 +52,7 @@ class BlogHeroOverlay extends Component {
     const subTitle = this.props.subTitle;
     const SocialIcons = title || subTitle ? <Social /> : null;
     return (
-      <Container id="hero-overlay">
+      <Container id="hero-overlay" {...this.props}>
         <Content id="content">
           <OverlayTitle id="overlay-title">
             {title}

@@ -1,7 +1,8 @@
 import React from "react";
 
+import Hero from '../components/Hero';
+
+import NotFound from '../../static/404.jpg';
+
 export default () =>
-  (<div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&apos;t exist...</p>
-  </div>);
+  <Hero image={NotFound} />;

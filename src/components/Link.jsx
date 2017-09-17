@@ -1,7 +1,7 @@
 import React from "react";
 import GatsbyLink from "gatsby-link";
 
-import "./Link.scss";
+import "../scss/Link.scss";
 
 export default function Link({ children, className, to }) {
   return (
