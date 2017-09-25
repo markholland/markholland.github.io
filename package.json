@@ -1,8 +1,8 @@
 {
-  "name": "@dschau/gatsby-blog-starter-kit",
-  "description": "Gatsby blog starter example",
+  "name": "partiallogic.com",
+  "description": "Personal Site",
   "version": "1.0.0",
-  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "author": "Mark Holland <mark@partiallogic.com",
   "dependencies": {
     "gatsby": "~1.9.36",
     "gatsby-link": "~1.6.16",
@@ -54,7 +54,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean:public": "rm -rf public/*.html",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "deploy:surge": "yarn clean:public && gatsby build && surge public/",
     "develop": "gatsby develop",
     "preserve": "npm run build",

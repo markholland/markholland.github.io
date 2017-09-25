@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/partiallogic-gatsbyJS`,
+  pathPrefix: `/`,
   siteMetadata: {
     author: "Mark Holland",
     title: `Partiallogic`
