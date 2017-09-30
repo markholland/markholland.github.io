@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import Social from './Social';
 
@@ -10,13 +10,14 @@ const Container = styled.div`
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: ${props => (props.title || props.subTitle ? 'rgba(0, 0, 0, 0.3)' : 'rgba(0, 0, 0, 0)')};
+  background-color: ${props =>
+    props.title || props.subTitle ? 'rgba(0, 0, 0, 0.3)' : 'rgba(0, 0, 0, 0)'};
   &:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -.34em; // remove space taken up and prevent word-wrapping
+    margin-right: -0.34em; // remove space taken up and prevent word-wrapping
   }
 `;
 
@@ -54,12 +55,8 @@ class BlogHeroOverlay extends Component {
     return (
       <Container id="hero-overlay" {...this.props}>
         <Content id="content">
-          <OverlayTitle id="overlay-title">
-            {title}
-          </OverlayTitle>
-          <OverlaySubTitle>
-            {subTitle}
-          </OverlaySubTitle>
+          <OverlayTitle id="overlay-title">{title}</OverlayTitle>
+          <OverlaySubTitle>{subTitle}</OverlaySubTitle>
           {SocialIcons}
         </Content>
       </Container>

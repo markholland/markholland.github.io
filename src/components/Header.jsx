@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Link from "./Link";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Link from './Link';
 
 const Header = styled.header`margin: 0;`;
 

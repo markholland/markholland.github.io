@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Link from "../components/Link";
+import Link from '../components/Link';
 
-import "../scss/index.scss";
-import "../scss/content-container.scss";
+import '../scss/index.scss';
+import '../scss/content-container.scss';
 
 const PostPreview = styled.div`
   margin: 0 auto 30px 0;
   padding-bottom: 20px;
-  maxWidth: 960;
+  maxwidth: 960;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -44,30 +44,24 @@ export default function Index({ data }) {
       <div className="content">
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => 
-            (
-              <PostPreview id="blog-post-preview" key={post.id}>
-                <PostTitle id="blog-post-title">
-                  <Link to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                </PostTitle>
-                <p>
-                  {post.excerpt}
-                </p>
-                <Link to={post.frontmatter.path}>Read more</Link>
-                {/* <PostDate id="date">
+          .map(({ node: post }) => (
+            <PostPreview id="blog-post-preview" key={post.id}>
+              <PostTitle id="blog-post-title">
+                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+              </PostTitle>
+              <p>{post.excerpt}</p>
+              <Link to={post.frontmatter.path}>Read more</Link>
+              {/* <PostDate id="date">
                   {post.frontmatter.date}
                 </PostDate> */}
-              </PostPreview>
-            )
-          )}
+            </PostPreview>
+          ))}
       </div>
     </div>
   );
 }
 
-export const pageQuery = ({ graphql }) => 
+export const pageQuery = ({ graphql }) =>
   graphql`
     query IndexQuery {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {

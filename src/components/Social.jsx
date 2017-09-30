@@ -17,23 +17,37 @@ const SocialLink = styled.a`
   transition: color 175ms ease-in-out, transform 175ms ease-in-out;
   &:hover {
     transform: scale(1.2);
-    color: ${props =>
-      props.hoverColor ? props.hoverColor : '#fff'};
+    color: ${props => (props.hoverColor ? props.hoverColor : '#fff')};
   }
 `;
 
 export default function Social(props) {
   return (
     <div>
-      <SocialLink href="https://twitter.com/partialmark" title="Follow on Twitter" target="_blank" {...props}>
+      <SocialLink
+        href="https://twitter.com/partialmark"
+        title="Follow on Twitter"
+        target="_blank"
+        {...props}
+      >
         <i className="icon icon-twitter" />
       </SocialLink>
-      <SocialLink href="https://github.com/markholland" title="Watch on Github" target="_blank" {...props}>
+      <SocialLink
+        href="https://github.com/markholland"
+        title="Watch on Github"
+        target="_blank"
+        {...props}
+      >
         <i className="icon icon-github" />
       </SocialLink>
-      <SocialLink href="https://partiallogic.com/rss" title="RSS Feed" target="_blank" {...props}>
+      <SocialLink
+        href="https://partiallogic.com/rss"
+        title="RSS Feed"
+        target="_blank"
+        {...props}
+      >
         <i className="icon icon-rss" />
       </SocialLink>
     </div>
-  )
+  );
 }

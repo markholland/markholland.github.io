@@ -1,11 +1,11 @@
-import React from "react";
-import GatsbyLink from "gatsby-link";
+import React from 'react';
+import GatsbyLink from 'gatsby-link';
 
-import "../scss/Link.scss";
+import '../scss/Link.scss';
 
 export default function Link({ children, className, to }) {
   return (
-    <GatsbyLink className={[`link`].concat(className || []).join(" ")} to={to}>
+    <GatsbyLink className={[`link`].concat(className || []).join(' ')} to={to}>
       {children}
     </GatsbyLink>
   );

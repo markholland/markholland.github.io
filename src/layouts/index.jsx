@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import "../scss/base.scss";
+import '../scss/base.scss';
 
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Footer from "../components/Footer";
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 
-import balloons from "../../static/balloons.jpg";
+import balloons from '../../static/balloons.jpg';
 
 const SiteWrapper = styled.div`
   display: flex;
@@ -18,27 +18,25 @@ const SiteWrapper = styled.div`
   flex-direction: column;
 `;
 
-const SiteContent = styled.div`
-  flex: 1;
-`;
+const SiteContent = styled.div`flex: 1;`;
 
 export default class Template extends React.Component {
   static PropTypes = {
-    children: PropTypes.func
+    children: PropTypes.func,
   };
 
   render() {
     const { location } = this.props;
 
-    const isRoot = location.pathname === "/";
+    const isRoot = location.pathname === '/';
 
     let hero = null;
     if (isRoot) {
       hero = (
         <Hero
           image={balloons}
-          title={"Mark Holland"}
-          subTitle={"Software Engineer living in London, UK"}
+          title={'Mark Holland'}
+          subTitle={'Software Engineer living in London, UK'}
         />
       );
     }
@@ -49,17 +47,15 @@ export default class Template extends React.Component {
           title="Partiallogic"
           meta={[
             {
-              name: "description",
-              content: "A Software Engineer living in London, UK"
+              name: 'description',
+              content: 'A Software Engineer living in London, UK',
             },
-            { name: "keywords", content: "software engineer" }
+            { name: 'keywords', content: 'software engineer' },
           ]}
         />
         <Header />
         {hero}
-        <SiteContent>
-          {this.props.children()}
-        </SiteContent>
+        <SiteContent>{this.props.children()}</SiteContent>
         <Footer />
       </SiteWrapper>
     );
