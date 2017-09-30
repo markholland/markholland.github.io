@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="apple-itunes-app" content="app-id=977966794"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>sub count</title>
+
+	<style data-strip-on-export>
+	[contentEditable] {
+		outline: none;
+	}
+	#controls {
+		position: fixed;
+		/*background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));*/
+		padding: 10px;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		text-align: right;
+		z-index: 10;
+	}
+	#controls button {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		color: black;
+		background-color: white;
+		padding: 0.5em;
+		font-weight: bold;
+		border: none;
+		box-shadow: 0px 0px 3px gray;
+	}
+	#controls button:hover {
+		background-color: #eee;
+	}
+	</style>
+	<script data-strip-on-export>
+		var id = "977966794";
+		function exportHTML(route) {
+			var toStrip = document.querySelectorAll('[data-strip-on-export]');
+			for (var i=0; i<toStrip.length; i++) {
+				toStrip[i].parentElement.removeChild(toStrip[i]);
+			}
+			document.getElementById('content').removeAttribute('contentEditable');
+			var html = document.querySelector("html").outerHTML;
+			var form = document.createElement('form');
+			form.action = "/export";
+			form.method = "POST";
+			form.target = "_blank";
+			var setVal = function(name, val) {
+				var input = document.createElement("input");
+				input.type = "hidden";
+				input.name = name;
+				input.value = val;
+				form.appendChild(input);
+			}
+			setVal("html", html);
+			setVal("id", id);
+			setVal("route", route);
+			setVal("name", document.title);
+			form.style.display = "none";
+			document.body.appendChild(form);
+			form.submit();
+		}
+	</script>
+	
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html, body, #content {
+	margin: 0px;
+	height: 100%;
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: #8a0712;
+	background-color: #f7dcde;
+	text-align: center;
+	line-height: 1.4;
+}
+#splash {
+	height: 100%;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	max-width: 700px;
+	margin: auto;
+	position: relative;
+}
+@media screen and (min-width: 700px) {
+	#splash > div {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 1em;
+		height: 100%;
+	}
+	#splash #left {
+		text-align: right;
+	}
+	#splash #right {
+		text-align: left;
+	}
+	#splash .iphone {
+		width: 288px;
+		height: 576px;
+	}
+	#screenshots img {
+		max-width: 200px;
+	}
+	#like-container {
+		position: absolute;
+		top: 100%;
+		right: 20px;
+		margin-top: -50px;
+	}
+}
+#chevron {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	margin-top: -2em;
+	color: #8a0712;
+	opacity: 0.5;
+	margin-left: -0.5em;
+}
+@media screen and (max-width: 700px) {
+	#chevron {
+		display: none;
+	}
+	#splash .iphone {
+		width: 192px;
+		height: 384px;
+		display: inline-block;
+	}
+	#splash #left {
+		padding: 10px;
+	}
+	#screenshots img {
+		max-width: 100px;
+	}
+	#splash .appstore {
+		display: none;
+	}
+}
+img.appstore {
+	max-width: 120px;
+}
+.iphone {
+	background-image: url('http://app-stop.appspot.com/static/5s.png');
+	background-size: contain;
+	position: relative;
+	width: 720px;
+	height: 1440px;
+}
+.iphone img {
+	position: absolute;
+	top: 17.9%;
+	left: 14%;
+	width: 73%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: normal;
+}
+#icon-row {
+	margin: 30px;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	position: relative;
+}
+#icon-row #icon-container {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	border: 10px solid #f7dcde;
+}
+#icon-row img {
+	width: 100%;
+	border-radius: 19px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+#description {
+	margin: auto;
+	width: 90%;
+	max-width: 700px;
+}
+#screenshots {
+	margin-bottom: 2em;
+}
+#screenshots img {
+	border: 1px solid white;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	margin: 1em;
+}
+#description {
+	white-space: pre-wrap;
+}
+#stars {
+	text-align: center;
+	font-style: italic;
+	font-size: small;
+}
+#stars span {
+	display: block;
+	font-size: 30px;
+	font-style: normal;
+}
+#attribution {
+	font-size: small;
+	padding: 2em;
+}
+#attribution a {
+	color: #8a0712;
+}
+
+p#copyright {
+	padding-bottom: 20px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div id='controls'>
+		<a href="https://twitter.com/intent/tweet?screen_name=subcountapp" class="twitter-mention-button" data-size="large" data-related="subcountapp">Tweet to @subcountapp</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	</div>
+	
+<div id='content' >
+
+
+<div id='chevron' class='fa fa-chevron-down'></div>
+<div id='splash'>
+	<div id='left'>
+		<h1>sub count</h1>
+		<p>Are you a budding YouTuber who incessantly keeps tabs on your rising subscriber count?</p>
+		<a href="https://itunes.apple.com/us/app/sub-count/id977966794"><img class='appstore' src='http://www.partiallogic.com/images/badge_appstore-lrg.svg' alt='Download on the Apple App Store'/></a>
+	</div>
+	<div id='right'>
+		<div class='iphone'>
+			<img src='http://a3.mzstatic.com/us/r30/Purple3/v4/32/f4/ac/32f4aced-db7f-38be-083b-fabf86088aed/screen1136x1136.jpeg'/>
+		</div>
+	</div>
+</div>
+
+<div id='icon-row'>
+	<div id='icon-container'>
+		<img src='http://is1.mzstatic.com/image/pf/us/r30/Purple5/v4/e8/76/b1/e876b19f-d777-e4c6-7160-5ee31a695070/mzl.jtyqlquu.png'/>
+	</div>
+</div>
+
+<div id='screenshots'>
+	
+		<img src=http://a4.mzstatic.com/us/r30/Purple7/v4/39/47/69/394769b8-baaf-8e86-c464-d90e8d40e62f/screen1136x1136.jpeg />
+	
+		<img src=http://a4.mzstatic.com/us/r30/Purple2/v4/cc/57/21/cc5721f0-51c3-8049-17bd-075d2c87c50e/screen1136x1136.jpeg />
+	
+		<img src=http://a3.mzstatic.com/us/r30/Purple1/v4/b7/d2/db/b7d2dbf8-62ed-fba0-050e-ef0eac70c500/screen1136x1136.jpeg />
+	
+</div>
+
+
+
+<p id='description'>Are you a budding YouTuber who incessantly keeps tabs on your rising subscriber count?
+
+sub count makes it a whole lot easier, simply type in your YouTube username and you&#39;ll always have the most up to date number of subscribers to your channel.
+
+With the sub count Notification Center Widget and Apple Watch Extension App you can stay up to date on your count in a faster, more discrete manner.
+
+<p>
+	<a href="https://itunes.apple.com/us/app/sub-count/id977966794"><img class='appstore' src='http://www.partiallogic.com/images/badge_appstore-lrg.png' alt='Download on the Apple App Store'/></a>
+</p>
+
+
+
+<!--<p>
+	<div id='like-container'></div>
+</p>-->
+
+<p id='copyright'>&copy; mark holland </p>
+
+
+</div>
+
+</body>
+</html>
