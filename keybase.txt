@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/markh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.partiallogic.com
+  * I am markh (https://keybase.io/markh) on keybase.
+  * I have a public key with fingerprint D3B6 D6CD 1D26 AA8B 1BBB  E61C 42A2 9036 4C29 5A24
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101a2072c52919c97029b65965efbeb5d96ba41256e50fe441a4ee48921feb9d42b0a",
+            "fingerprint": "d3b6d6cd1d26aa8b1bbbe61c42a290364c295a24",
+            "host": "keybase.io",
+            "key_id": "42a290364c295a24",
+            "kid": "0101a2072c52919c97029b65965efbeb5d96ba41256e50fe441a4ee48921feb9d42b0a",
+            "uid": "25a214fb7b8b499b360c89dc130b7a00",
+            "username": "markh"
+        },
+        "revoke": {
+            "sig_ids": [
+                "e598538a42ca97bf36a7e12bec310681ac417d2628757a3ed36567d9e1fddee70f"
+            ]
+        },
+        "service": {
+            "hostname": "www.partiallogic.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470569501,
+    "expire_in": 157680000,
+    "prev": "e65f7dc8c837140c6a0b05716d733cd20da87d335f205774d3dfc19624755add",
+    "seqno": 14,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.55
+Comment: https://keybase.io/crypto
+
+yMJxAnicrZJdbFRFGIa3QGm7SSMQbAylRU82XJBNnZkzP2c2RsUE9YJgahSIFJb5
+O93T3T1nOed0txV74U8MJRKrUSPGCywImIBaSuINiVRNwL8YvSIREgvECxMxhAuo
+MdE5G7zz0rmZzJf3e953vpmvepfn8h2b++oH5k63UMe3C0vjuR0n1g/sd2SkJ53S
+fqdq2pupaZOk5WqgnZIDIIACAYYUQRxyxRlAXFLCKTG+NJJoTqXAEBFqCPANxlBg
+Y7DHEfSN5BojCYRTdPwgHDVxIw7C1GK1K6mmSkONqBCehFJKQ6HCSCAOXIoV4kQg
+bBsrUZJ12HBSJGYoiGzNHsrteP+h/59zj7dxyMIh9iWTnsScS5cC5XGtoAskEwBk
+wsTEoagbq66LuFpxpopObJpR1WRDTYJRmzhxSrscQ7hHXE9gpARn0nepYAYiaZQL
+AfWgUBgyOxfkMcKEa7RLCWWaG+hrbQwDvrPbsq1dM1BteDaiu9atVmuoIeI0ELVa
+NBqoIRXVbbhGHKWRimpWUUnTRlLK0qWTjXaLkeW7sLIMQm0fynY0TZwEUeiUoFWq
+NMjoEDNAKCcAFh0z0QhiUw4yBWHUA3ZlPqZpkYYSn2nlKc9lEANFBZCAMEg1c12l
+EdDCY9p1iY9smWHtal9BThFmhAitnex6+8Ios7Q5xahl2gmGIh2PjTP1xfmRFbmO
+fG5l57LsB+fyPav+/dfHgq6/N1d7wDTbdnb2uakVjyxL1lw7+doPR+sfxbTZdWXi
+u5Uz97GNF+6fP5QWHjo8/dTqMx9Pr9m+WPl0k3i98P7z7z5zaeG9kTcuLBX+uLk4
+Wel8NhgLbiAutv6y/ffzv508smewtqd42tvy5aWLS4Wrr64bfuftJ0cGEOweVm7v
+gx/+3InLT+xbNdefn19/a+yvmfzwfGXb5ZHZ/oObrr508NcjT+8tHEKHd8yd+2bw
+rWM//dl9o9i33Ltz4ETXwvFePtjypn685/a9dy5ueTks+u4nG83nhQeGeypj4ZW1
+fRNDu+kHxx+effTxVzY0Vz/22Zt7bx7t1lsvf99//euZ1oZT+EW+a+e6gcnFF/4B
+lPRNvw==
+=nYC5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/markh
+
+==================================================================
+
