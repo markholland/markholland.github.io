@@ -30,7 +30,7 @@ export default () => (
           You can view the count in the app, with the optional widget in
           Notification Center or even on your wrist with the Watch app. Read
           more about my first <b>iOS</b> publishing experience{' '}
-          <a href="https://www.partiallogic.com/sub-count.html">
+          <a href="https://partiallogic.com/sub-count.html">
             here
           </a>.
           <center>
