@@ -30,7 +30,7 @@ export default () => (
           You can view the count in the app, with the optional widget in
           Notification Center or even on your wrist with the Watch app. Read
           more about my first <b>iOS</b> publishing experience{' '}
-          <a href="https://www.partiallogic.com/2015/04/13/sub-count.html">
+          <a href="https://www.partiallogic.com/sub-count.html">
             here
           </a>.
           <center>
@@ -119,7 +119,7 @@ export default () => (
           </a>.
           <center>
             <p>
-              <img src={pandroid} alt="panroid app icon" />
+              <img src={pandroid} alt="pandroid app icon" />
             </p>
             <a href="https://play.google.com/store/apps/details?id=pandroid.agent">
               <img src={playstore} alt="Get it on Google Play" />
