@@ -8,7 +8,7 @@ import eff from '../../static/EffBadge2017.png';
 
 export default () => (
   <div>
-    <Hero image={lumiere} title={'Mark Holland'} subTitle={'About Me'} />
+    <Hero image={lumiere} title="Mark Holland" subTitle="About Me" />
     <div className="content-container">
       <div className="content">
         <p>
@@ -17,9 +17,8 @@ export default () => (
         </p>
         <p>
           I&apos;m an avid collector of vinyl records and you can check out my
-          collection on <a href="https://www.discogs.com/user/_Mark">
-            Discogs
-          </a>.
+          collection on{' '}
+          <a href="https://www.discogs.com/user/_Mark"> Discogs </a>.
         </p>
         <p>
           Look out for me if you attend any developer meetups in London such as{' '}

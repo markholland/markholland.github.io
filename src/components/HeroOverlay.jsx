@@ -49,8 +49,7 @@ const OverlaySubTitle = styled.h3`
 
 class BlogHeroOverlay extends Component {
   render() {
-    const title = this.props.title;
-    const subTitle = this.props.subTitle;
+    const { title, subTitle } = this.props;
     const SocialIcons = title || subTitle ? <Social /> : null;
     return (
       <Container id="hero-overlay" {...this.props}>

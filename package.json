@@ -17,7 +17,7 @@
     "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.jsx\"",
     "test": "echo \"Should probably write some tests!\"",
     "lint": "yarn lint:js && yarn lint:md && yarn lint:style",
-    "lint:js": "eslint --ext .js,.jsx --ignore-pattern public,static .",
+    "lint:js": "eslint src/",
     "lint:md": "remark src/posts/",
     "lint:style": "stylelint src/**/*.css",
     "format:js": "prettier '**/*.{js,jsx}' --write",

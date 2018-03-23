@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from './Link';
 
-const Header = styled.header`margin: 0;`;
+const Header = styled.header`
+  margin: 0;
+`;
 
-const HeaderContent = styled.div`padding: 1.45rem 1.0875rem;`;
+const HeaderContent = styled.div`
+  padding: 1.45rem 1.0875rem;
+`;
 
 const Logo = styled.span`
   border: 3px solid;
@@ -15,9 +19,13 @@ const Logo = styled.span`
   }
 `;
 
-const FirstLetter = styled.span`margin-left: 10px;`;
+const FirstLetter = styled.span`
+  margin-left: 10px;
+`;
 
-const SecondLetter = styled.span`margin-right: 10px;`;
+const SecondLetter = styled.span`
+  margin-right: 10px;
+`;
 
 const StyledLink = styled(Link)`
   font-size: 1em;

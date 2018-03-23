@@ -5,8 +5,12 @@ import PropTypes from 'prop-types';
 import favicon from './favicon.ico';
 
 export default class HTML extends React.Component {
-  static PropTypes = {
+  static propTypes = {
     body: PropTypes.string,
+  };
+
+  static defaultProps = {
+    body: '',
   };
 
   render() {
