@@ -9,7 +9,9 @@ jobs:
       - <<: *get-cache
       - run: yarn install
       - <<: *save-cache
+      - run: yarn lint
       - run: yarn test
+      - run: yarn build
       - run: yarn deploy:surge
 
   deploy:
