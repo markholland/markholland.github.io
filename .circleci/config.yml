@@ -1,3 +1,16 @@
+workflows:
+  version: 2
+  nodegatsby:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - CI
+
 version: 2
 jobs:
   build:
@@ -21,19 +34,6 @@ jobs:
     steps:
       - run: yarn deploy
       
-workflows:
-  version: 2
-  nodegatsby:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - CI
-
 get-cache: &get-cache
   restore_cache:
     key: dependencies-{{ checksum "package.json" }}
