@@ -24,10 +24,10 @@ workflows:
   node-gatsby:
     jobs:
       - build
-        filters:
-          branches:
-            ignore:
-              - gh-pages
+          filters:
+            branches:
+              ignore:
+                - gh-pages
       - deploy
           requires:
             - build
