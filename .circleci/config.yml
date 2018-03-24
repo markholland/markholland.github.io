@@ -24,7 +24,7 @@ workflows:
   version: 2
   node-gatsby:
     jobs:
-      - build:
+      - build
       - deploy:
           requires:
             - build
