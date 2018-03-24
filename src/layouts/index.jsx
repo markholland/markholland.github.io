@@ -18,11 +18,17 @@ const SiteWrapper = styled.div`
   flex-direction: column;
 `;
 
-const SiteContent = styled.div`flex: 1;`;
+const SiteContent = styled.div`
+  flex: 1;
+`;
 
 export default class Template extends React.Component {
-  static PropTypes = {
+  static propTypes = {
     children: PropTypes.func,
+  };
+
+  static defaultProps = {
+    children: () => {},
   };
 
   render() {
@@ -35,8 +41,8 @@ export default class Template extends React.Component {
       hero = (
         <Hero
           image={balloons}
-          title={'Mark Holland'}
-          subTitle={'Software Engineer living in London, UK'}
+          title="Mark Holland"
+          subTitle="Software Engineer living in London, UK"
         />
       );
     }

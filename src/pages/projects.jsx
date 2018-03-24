@@ -15,7 +15,7 @@ import '../scss/content-container.scss';
 
 export default () => (
   <div>
-    <Hero image={macbook} title={'Mark Holland'} subTitle={'Projects'} />
+    <Hero image={macbook} title="Mark Holland" subTitle="Projects" />
     <div className="content-container">
       <div className="content">
         <div id="title">
@@ -30,9 +30,7 @@ export default () => (
           You can view the count in the app, with the optional widget in
           Notification Center or even on your wrist with the Watch app. Read
           more about my first <b>iOS</b> publishing experience{' '}
-          <a href="https://partiallogic.com/sub-count.html">
-            here
-          </a>.
+          <a href="https://partiallogic.com/sub-count.html">here</a>.
           <center>
             <img src={subcount} alt="subcount screen capture" />
             <a

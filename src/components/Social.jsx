@@ -28,6 +28,7 @@ export default function Social(props) {
         href="https://twitter.com/partialmark"
         title="Follow on Twitter"
         target="_blank"
+        rel="noopener noreferrer"
         {...props}
       >
         <i className="icon icon-twitter" />
@@ -36,6 +37,7 @@ export default function Social(props) {
         href="https://github.com/markholland"
         title="Watch on Github"
         target="_blank"
+        rel="noopener noreferrer"
         {...props}
       >
         <i className="icon icon-github" />
@@ -44,6 +46,7 @@ export default function Social(props) {
         href="https://partiallogic.com/rss"
         title="RSS Feed"
         target="_blank"
+        rel="noopener noreferrer"
         {...props}
       >
         <i className="icon icon-rss" />

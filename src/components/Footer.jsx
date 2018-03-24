@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Social from './Social';
+// import Social from './Social';
 
 const Container = styled.footer`
   display: flex;
