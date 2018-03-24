@@ -23,12 +23,12 @@ workflows:
   version: 2
   node-gatsby:
     jobs:
-      - build
+      - build:
           filters:
             branches:
               ignore:
                 - gh-pages
-      - deploy
+      - deploy:
           requires:
             - build
           filters:
