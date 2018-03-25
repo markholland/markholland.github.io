@@ -13,13 +13,13 @@ jobs:
       - run: yarn test
       - run: yarn build
       - run:
-        command: |
-          if [ $CIRCLE_BRANCH = 'master' ]; 
-          then 
-            yarn deploy;
-          elif
-            yarn deploy:surge
-          fi
+          command: |
+            if [ $CIRCLE_BRANCH = 'master' ]; 
+            then 
+              yarn deploy;
+            elif
+              yarn deploy:surge
+            fi
 
 get-cache: &get-cache
   restore_cache:
