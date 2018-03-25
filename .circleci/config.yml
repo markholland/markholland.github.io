@@ -9,32 +9,19 @@ jobs:
       - <<: *get-cache
       - run: yarn install
       - <<: *save-cache
+      - run: yarn lint
       - run: yarn test
-      - run: yarn deploy:surge
-
-  deploy:
-    docker:
-      - image: circleci/node:9.6.1
-    working_directory: ~/repo
-    steps:
-      - run: yarn deploy
-
-workflows:
-  version: 2
-  node-gatsby:
-    jobs:
-      - build:
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - master
+      - run: yarn build
+      - run:
+          command: |
+            if [ $CIRCLE_BRANCH = 'master' ]; 
+            then 
+              git config --global user.email $GH_EMAIL
+              git config --global user.name $GH_NAME
+              yarn deploy;
+            else
+              yarn deploy:surge
+            fi
 
 get-cache: &get-cache
   restore_cache:

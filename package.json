@@ -8,8 +8,8 @@
   "scripts": {
     "build": "yarn clean && gatsby build",
     "clean": "rm -rf public/*.html",
-    "deploy": "gatsby build && gh-pages -d public",
-    "deploy:surge": "yarn clean && gatsby build && surge --domain partiallogic.surge.sh public/",
+    "deploy": "gatsby build && echo 'www.partiallogic.com' > ./public/CNAME && gh-pages -m ‘auto commit [ci skip]’ -d ./public",
+    "deploy:surge": "surge --domain partiallogic.surge.sh public/",
     "develop": "gatsby develop",
     "preserve": "yarn run build",
     "serve": "gatsby serve",
@@ -18,7 +18,7 @@
     "test": "echo \"Should probably write some tests!\"",
     "lint": "yarn lint:js && yarn lint:md && yarn lint:style",
     "lint:js": "eslint src/",
-    "lint:md": "remark src/posts/",
+    "lint:md": "remark posts/",
     "lint:style": "stylelint src/**/*.css",
     "format:js": "prettier '**/*.{js,jsx}' --write",
     "write-good": "write-good $(glob 'src/posts/**/*.md')"
