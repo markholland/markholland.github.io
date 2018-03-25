@@ -8,7 +8,7 @@
   "scripts": {
     "build": "yarn clean && gatsby build",
     "clean": "rm -rf public/*.html",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -m ‘auto commit [ci skip]’ -d public",
     "deploy:surge": "surge --domain partiallogic.surge.sh public/",
     "develop": "gatsby develop",
     "preserve": "yarn run build",
