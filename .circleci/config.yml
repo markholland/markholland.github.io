@@ -14,7 +14,7 @@ jobs:
       - run: yarn build
       - run:
           command: |
-            if [ $CIRCLE_BRANCH = 'master' ]; 
+            if [ $CIRCLE_BRANCH = 'CI' ]; 
             then 
               yarn deploy;
             else
