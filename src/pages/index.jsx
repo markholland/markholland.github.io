@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Link from '../components/Link';
+import Link from "../components/Link";
 
-import '../scss/index.scss';
-import '../scss/content-container.scss';
+import "../scss/index.scss";
+import "../scss/content-container.scss";
 
 const PostPreview = styled.div`
   margin: 0 auto 30px 0;
@@ -15,6 +15,7 @@ const PostPreview = styled.div`
   align-items: flex-start;
   justify-content: center;
   border-bottom: 2px solid #eee;
+
   &:last-child {
     border-bottom-width: 0;
   }
@@ -24,18 +25,11 @@ const PostTitle = styled.h1`
   width: 100%;
   font-size: 1.5em;
   margin-top: 0;
+
   @media only screen and (max-width: 720px) {
     font-size: 1.4em;
   }
 `;
-
-// const PostDate = styled.span`
-//   font-size: 1em;
-//   font-weight: italic;
-//   color: #555;
-//   text-transform: uppercase;
-//   margin-bottom: 1rem;
-// `;
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
