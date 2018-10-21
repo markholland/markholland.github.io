@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
-import Social from './Social';
+import Social from './Social'
 
 const Container = styled.div`
   position: absolute;
@@ -19,14 +19,14 @@ const Container = styled.div`
     vertical-align: middle;
     margin-right: -0.34em; // remove space taken up and prevent word-wrapping
   }
-`;
+`
 
 const Content = styled.div`
   display: inline-block;
   vertical-align: middle;
   padding: 0 1em;
   font-weight: 600;
-`;
+`
 
 const OverlayTitle = styled.h1`
   font-size: 45px;
@@ -36,7 +36,7 @@ const OverlayTitle = styled.h1`
   @media only screen and (max-width: 720px) {
     font-size: 25px;
   }
-`;
+`
 
 const OverlaySubTitle = styled.h3`
   font-size: 22px;
@@ -45,12 +45,12 @@ const OverlaySubTitle = styled.h3`
   @media only screen and (max-width: 720px) {
     font-size: 17px;
   }
-`;
+`
 
 class BlogHeroOverlay extends Component {
   render() {
-    const { title, subTitle } = this.props;
-    const SocialIcons = title || subTitle ? <Social /> : null;
+    const { title, subTitle } = this.props
+    const SocialIcons = title || subTitle ? <Social /> : null
     return (
       <Container id="hero-overlay" {...this.props}>
         <Content id="content">
@@ -59,8 +59,8 @@ class BlogHeroOverlay extends Component {
           {SocialIcons}
         </Content>
       </Container>
-    );
+    )
   }
 }
 
-export default BlogHeroOverlay;
+export default BlogHeroOverlay

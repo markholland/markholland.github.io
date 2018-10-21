@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
-import HeroOverlay from './HeroOverlay';
+import HeroOverlay from './HeroOverlay'
 
 const HeroImage = styled.div`
   width: 100%;
@@ -16,7 +16,7 @@ const HeroImage = styled.div`
   @media only screen and (max-width: 720px) {
     height: 200px;
   }
-`;
+`
 
 class BlogHero extends Component {
   render() {
@@ -24,8 +24,8 @@ class BlogHero extends Component {
       <HeroImage {...this.props}>
         <HeroOverlay {...this.props} />
       </HeroImage>
-    );
+    )
   }
 }
 
-export default BlogHero;
+export default BlogHero

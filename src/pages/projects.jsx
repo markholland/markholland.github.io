@@ -1,17 +1,17 @@
-import React from 'react';
-import Hero from '../components/Hero';
+import React from 'react'
+import Hero from '../components/Hero'
 
-import macbook from '../../static/macbook.jpg';
-import subcount from '../../static/projects/subcount.jpg';
-import appstore from '../../static/projects/badge_appstore-lrg.jpg';
-import ocw2014 from '../../static/projects/ocw-android-2014.jpg';
-import ocw from '../../static/projects/ocw-android.jpg';
-import wisemonkey from '../../static/projects/wisemonkey.jpg';
-import pandroid from '../../static/projects/pandroid-icon.jpg';
-import playstore from '../../static/projects/en-play-badge.jpg';
-import github from '../../static/projects/GitHub_Logo.jpg';
+import macbook from '../../static/macbook.jpg'
+import subcount from '../../static/projects/subcount.jpg'
+import appstore from '../../static/projects/badge_appstore-lrg.jpg'
+import ocw2014 from '../../static/projects/ocw-android-2014.jpg'
+import ocw from '../../static/projects/ocw-android.jpg'
+import wisemonkey from '../../static/projects/wisemonkey.jpg'
+import pandroid from '../../static/projects/pandroid-icon.jpg'
+import playstore from '../../static/projects/en-play-badge.jpg'
+import github from '../../static/projects/GitHub_Logo.jpg'
 
-import '../scss/content-container.scss';
+import '../scss/content-container.scss'
 
 export default () => (
   <div>
@@ -114,7 +114,8 @@ export default () => (
           many aspects of a <b>Android</b> device. I worked on it for{' '}
           <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">
             Google Summer of Code 2012
-          </a>.
+          </a>
+          .
           <center>
             <p>
               <img src={pandroid} alt="pandroid app icon" />
@@ -130,4 +131,4 @@ export default () => (
       </div>
     </div>
   </div>
-);
+)

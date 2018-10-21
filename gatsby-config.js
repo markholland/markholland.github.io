@@ -1,65 +1,65 @@
 module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
-    author: "Mark Holland",
-    title: `Partiallogic`
+    author: 'Mark Holland',
+    title: `Partiallogic`,
   },
   plugins: [
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-styled-components",
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-styled-components',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/posts`,
-        name: "posts"
-      }
+        name: 'posts',
+      },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          "gatsby-remark-copy-linked-files",
+          'gatsby-remark-copy-linked-files',
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               linkImagesToOriginal: false,
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-smartypants",
-          "gatsby-remark-autolink-headers"
-        ]
-      }
+          'gatsby-remark-prismjs',
+          'gatsby-remark-smartypants',
+          'gatsby-remark-autolink-headers',
+        ],
+      },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: `Partiallogic`,
-        short_name: "Partiallogic",
-        start_url: "/",
-        description: "The blog of the developer, Mark Holland",
-        background_color: "#ffffff",
-        theme_color: "#2077b2",
-        orientation: "portrait",
-        display: "minimal-ui",
+        short_name: 'Partiallogic',
+        start_url: '/',
+        description: 'The blog of the developer, Mark Holland',
+        background_color: '#ffffff',
+        theme_color: '#2077b2',
+        orientation: 'portrait',
+        display: 'minimal-ui',
         icons: [
           {
-            src: "/logos/logo-192.png",
-            sizes: "192x192",
-            type: "image/png"
+            src: '/logos/logo-192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: "/logos/logo-512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
+            src: '/logos/logo-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
     },
-    "gatsby-plugin-offline"
-  ]
-};
+    'gatsby-plugin-offline',
+  ],
+}

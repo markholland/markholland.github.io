@@ -1,20 +1,20 @@
 /* eslint-disable global-require, import/no-webpack-loader-syntax, import/no-unresolved */
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import favicon from './favicon.ico';
+import favicon from './favicon.ico'
 
 export default class HTML extends React.Component {
   static propTypes = {
     body: PropTypes.string,
-  };
+  }
 
   static defaultProps = {
     body: '',
-  };
+  }
 
   render() {
-    let css;
+    let css
     if (process.env.NODE_ENV === 'production') {
       css = (
         <style
@@ -22,7 +22,7 @@ export default class HTML extends React.Component {
             __html: require('!raw!../public/styles.css'),
           }}
         />
-      );
+      )
     }
 
     return (
@@ -46,6 +46,6 @@ export default class HTML extends React.Component {
           {this.props.postBodyComponents}
         </body>
       </html>
-    );
+    )
   }
 }
