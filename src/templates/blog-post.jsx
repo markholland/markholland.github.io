@@ -1,14 +1,14 @@
-import React from "react";
-import Helmet from "react-helmet";
-import styled from "styled-components";
-import BackIcon from "react-icons/lib/fa/chevron-left";
-import ForwardIcon from "react-icons/lib/fa/chevron-right";
+import React from 'react'
+import Helmet from 'react-helmet'
+import styled from 'styled-components'
+import BackIcon from 'react-icons/lib/fa/chevron-left'
+import ForwardIcon from 'react-icons/lib/fa/chevron-right'
 
-import Link from "../components/Link";
-import Hero from "../components/Hero";
+import Link from '../components/Link'
+import Hero from '../components/Hero'
 
-import "../scss/blog-post.scss";
-import "../scss/content-container.scss";
+import '../scss/blog-post.scss'
+import '../scss/content-container.scss'
 
 const PostTitle = styled.div`
   font-size: 1.5em;
@@ -18,14 +18,14 @@ const PostTitle = styled.div`
   @media only screen and (min-width: 720px) {
     font-size: 1.8em;
   }
-`;
+`
 
 const PostDate = styled.h2`
   font-size: 1em;
   @media only screen and (min-width: 720px) {
     font-size: 1.2em;
   }
-`;
+`
 
 const PostContent = styled.div`
   font-size: 0.8em;
@@ -36,17 +36,17 @@ const PostContent = styled.div`
   @media only screen and (min-width: 720px) {
     font-size: 1em;
   }
-`;
+`
 
 const LinkPrev = styled(Link)`
   float: left;
   padding: 20px 30px;
-`;
+`
 
 const LinkNext = styled(Link)`
   float: right;
   padding: 20px 30px;
-`;
+`
 
 const NavLinkText = styled.div`
   display: none;
@@ -60,12 +60,12 @@ const NavLinkText = styled.div`
     vertical-align: middle;
     line-height: 20px;
   }
-`;
+`
 
 export default function Template({ data, pathContext }) {
-  const { markdownRemark: post } = data;
-  const { next, prev } = pathContext;
-  const image = post.frontmatter.image.childImageSharp.resize.src;
+  const { markdownRemark: post } = data
+  const { next, prev } = pathContext
+  const image = post.frontmatter.image.childImageSharp.resize.src
   return (
     <div id="blog-post-container">
       <Helmet title={`Partiallogic - ${post.frontmatter.title}`} />
@@ -96,7 +96,7 @@ export default function Template({ data, pathContext }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export const pageQuery = ({ graphql }) =>
@@ -119,4 +119,4 @@ export const pageQuery = ({ graphql }) =>
         }
       }
     }
-  `;
+  `

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import '../scss/icons.css.scss';
+import '../scss/icons.css.scss'
 
 const SocialLink = styled.a`
   color: ${props => props.color || '#fff'};
@@ -19,7 +19,7 @@ const SocialLink = styled.a`
     transform: scale(1.2);
     color: ${props => (props.hoverColor ? props.hoverColor : '#fff')};
   }
-`;
+`
 
 export default function Social(props) {
   return (
@@ -52,5 +52,5 @@ export default function Social(props) {
         <i className="icon icon-rss" />
       </SocialLink>
     </div>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import React from 'react';
-import Hero from '../components/Hero';
+import React from 'react'
+import Hero from '../components/Hero'
 
-import '../scss/content-container.scss';
+import '../scss/content-container.scss'
 
-import lumiere from '../../static/lumiere.jpg';
-import eff from '../../static/EffBadge2017.png';
+import lumiere from '../../static/lumiere.jpg'
+import eff from '../../static/EffBadge2017.png'
 
 export default () => (
   <div>
@@ -42,4 +42,4 @@ export default () => (
       </div>
     </div>
   </div>
-);
+)

@@ -1,17 +1,18 @@
-import React from 'react';
-import GatsbyLink from 'gatsby-link';
-import HomeIcon from 'react-icons/lib/fa/home';
-import TagsIcon from 'react-icons/lib/fa/tags';
+import React from 'react'
+import GatsbyLink from 'gatsby-link'
+import HomeIcon from 'react-icons/lib/fa/home'
+import TagsIcon from 'react-icons/lib/fa/tags'
 
-import Link from '../components/Link';
+import Link from '../components/Link'
 
 export default function Tags({ pathContext }) {
-  const { posts, post, tag } = pathContext;
+  const { posts, post, tag } = pathContext
   if (tag) {
     return (
       <div>
         <h1>
-          {post.length} post{post.length === 1 ? '' : 's'} tagged with {tag}
+          {post.length} post
+          {post.length === 1 ? '' : 's'} tagged with {tag}
         </h1>
         <ul>
           {post.map(({ id, frontmatter, excerpt }) => (
@@ -29,7 +30,7 @@ export default function Tags({ pathContext }) {
           <TagsIcon /> All tags
         </Link>
       </div>
-    );
+    )
   }
   return (
     <div>
@@ -45,5 +46,5 @@ export default function Tags({ pathContext }) {
         <HomeIcon /> All posts
       </Link>
     </div>
-  );
+  )
 }

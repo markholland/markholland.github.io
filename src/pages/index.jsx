@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import Link from "../components/Link";
+import Link from '../components/Link'
 
-import "../scss/index.scss";
-import "../scss/content-container.scss";
+import '../scss/index.scss'
+import '../scss/content-container.scss'
 
 const PostPreview = styled.div`
   margin: 0 auto 30px 0;
@@ -19,7 +19,7 @@ const PostPreview = styled.div`
   &:last-child {
     border-bottom-width: 0;
   }
-`;
+`
 
 const PostTitle = styled.h1`
   width: 100%;
@@ -29,10 +29,10 @@ const PostTitle = styled.h1`
   @media only screen and (max-width: 720px) {
     font-size: 1.4em;
   }
-`;
+`
 
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
+  const { edges: posts } = data.allMarkdownRemark
   return (
     <div className="content-container">
       <div className="content">
@@ -52,7 +52,7 @@ export default function Index({ data }) {
           ))}
       </div>
     </div>
-  );
+  )
 }
 
 export const pageQuery = ({ graphql }) =>
@@ -72,4 +72,4 @@ export const pageQuery = ({ graphql }) =>
         }
       }
     }
-  `;
+  `
