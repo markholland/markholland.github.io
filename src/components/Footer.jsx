@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 // import Social from './Social';
 
@@ -21,7 +21,7 @@ export default function Footer() {
   // };
   return (
     <Container id="footer-container">
-      © 2017 Mark Holland
+      © 2018 Mark Holland
       {/* <Social {...colors} /> */}
     </Container>
   );
