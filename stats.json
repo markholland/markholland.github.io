@@ -53,8 +53,8 @@
       "path---best-of-2015-music-html-53a813e226481545baf7.js.map"
     ],
     "path---tags": [
-      "path---tags-a1222b01eaed733947a3.js",
-      "path---tags-a1222b01eaed733947a3.js.map"
+      "path---tags-9fff4f198e18043588b1.js",
+      "path---tags-9fff4f198e18043588b1.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -97,16 +97,16 @@
       "path---telegram-html-00e2887fdac8badc1b18.js.map"
     ],
     "path---tags-tag": [
-      "path---tags-tag-d8119e68416a2fd233ff.js",
-      "path---tags-tag-d8119e68416a2fd233ff.js.map"
+      "path---tags-tag-be87e8c5b6da190e8c1c.js",
+      "path---tags-tag-be87e8c5b6da190e8c1c.js.map"
     ],
     "path---ocw-2014-html": [
       "path---ocw-2014-html-9ca1edf03dc6e3e8bdc4.js",
       "path---ocw-2014-html-9ca1edf03dc6e3e8bdc4.js.map"
     ],
     "path---tags-music": [
-      "path---tags-music-e3678bb3a80fd80f9979.js",
-      "path---tags-music-e3678bb3a80fd80f9979.js.map"
+      "path---tags-music-f5f2c607954290c132e8.js",
+      "path---tags-music-f5f2c607954290c132e8.js.map"
     ],
     "path---just-an-average-html": [
       "path---just-an-average-html-deed7ff8e7550c633b88.js",
@@ -121,16 +121,16 @@
       "path---pandora-fms-gsoc-html-b0f6e60f6ae5789aca73.js.map"
     ],
     "path---tags-videogames": [
-      "path---tags-videogames-ccdea0d96630097396e2.js",
-      "path---tags-videogames-ccdea0d96630097396e2.js.map"
+      "path---tags-videogames-f989419d0a44fcac12c8.js",
+      "path---tags-videogames-f989419d0a44fcac12c8.js.map"
     ],
     "path---psvr-html": [
-      "path---psvr-html-29a71025e87dfb468f3c.js",
-      "path---psvr-html-29a71025e87dfb468f3c.js.map"
+      "path---psvr-html-82f3c66e70a1c270f0b2.js",
+      "path---psvr-html-82f3c66e70a1c270f0b2.js.map"
     ],
     "path---index": [
-      "path---index-0e3ea83294d85f3e0d5c.js",
-      "path---index-0e3ea83294d85f3e0d5c.js.map"
+      "path---index-8d6eafc7cf7c3f2b93da.js",
+      "path---index-8d6eafc7cf7c3f2b93da.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-330c0ab273944243b8a6.js",
@@ -164,6 +164,10 @@
       "component---src-pages-404-jsx-b23ea28eb3a8fc9933ef.js",
       "component---src-pages-404-jsx-b23ea28eb3a8fc9933ef.js.map"
     ],
+    "path---best-of-2018-music-html": [
+      "path---best-of-2018-music-html-7a2652937adfcfd4031b.js",
+      "path---best-of-2018-music-html-7a2652937adfcfd4031b.js.map"
+    ],
     "path---mac-g-4-html": [
       "path---mac-g-4-html-d36bae7e6ee949e9ce76.js",
       "path---mac-g-4-html-d36bae7e6ee949e9ce76.js.map"
@@ -189,8 +193,8 @@
       "path---phase-one-complete-c7b9584a5691f9824469.js.map"
     ],
     "app": [
-      "app-e2318525012f9f01a8db.js",
-      "app-e2318525012f9f01a8db.js.map"
+      "app-f098889ed9ffbd2dc850.js",
+      "app-f098889ed9ffbd2dc850.js.map"
     ],
     "path---hidden-sounds-html": [
       "path---hidden-sounds-html-719dfceedbb2cdfef913.js",
