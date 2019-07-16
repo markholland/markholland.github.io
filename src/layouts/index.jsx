@@ -42,7 +42,7 @@ export default class Template extends React.Component {
         <Hero
           image={balloons}
           title="Mark Holland"
-          subTitle="Software Engineer living in London, UK"
+          subTitle="Software Engineer living in Valencia, Spain"
         />
       )
     }
@@ -54,7 +54,7 @@ export default class Template extends React.Component {
           meta={[
             {
               name: 'description',
-              content: 'A Software Engineer living in London, UK',
+              content: 'A Software Engineer living in Valencia, Spain',
             },
             { name: 'keywords', content: 'software engineer' },
           ]}
