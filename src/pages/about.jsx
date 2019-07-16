@@ -20,12 +20,6 @@ export default () => (
           collection on{' '}
           <a href="https://www.discogs.com/user/_Mark"> Discogs </a>.
         </p>
-        <p>
-          Look out for me if you attend any developer meetups in London such as{' '}
-          <a href="http://www.meetup.com/HNLondon/">HNLondon</a>,{' '}
-          <a href="http://www.meetup.com/android/">Londroid</a> &{' '}
-          <a href="http://www.meetup.com/swiftlondon/">Swift London</a>.
-        </p>
         <center>
           <p>
             If you wish to contact me just drop a line at{' '}
