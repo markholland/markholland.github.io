@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import '../scss/content-container.scss'
 
 import lumiere from '../../static/lumiere.jpg'
-import eff from '../../static/EffBadge2017.png'
+import eff from '../../static/2014-members-circle.png'
 
 export default () => (
   <div>
