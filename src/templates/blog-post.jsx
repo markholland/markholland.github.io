@@ -30,7 +30,6 @@ const PostDate = styled.h2`
 const PostContent = styled.div`
   font-size: 0.8em;
   line-height: 1.5;
-  color: #21272d;
   font-weight: 400;
   margin: 0 0 1.5em;
   @media only screen and (min-width: 720px) {

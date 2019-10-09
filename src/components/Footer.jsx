@@ -7,7 +7,6 @@ const Container = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 2em 0;
-  background: #f5f5f5;
   font-size: 0.8em;
   margin-top: 20px;
 `
