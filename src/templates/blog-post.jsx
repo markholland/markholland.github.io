@@ -61,9 +61,9 @@ const NavLinkText = styled.div`
   }
 `
 
-export default function Template({ data, pathContext }) {
+export default function Template({ data, pageContext }) {
   const { markdownRemark: post } = data
-  const { next, prev } = pathContext
+  const { next, prev } = pageContext
   const image = post.frontmatter.image.childImageSharp.resize.src
   return (
     <div id="blog-post-container">
