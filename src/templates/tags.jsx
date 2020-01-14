@@ -1,5 +1,5 @@
 import React from 'react'
-import GatsbyLink from 'gatsby-link'
+import { Link as GatsbyLink } from "gatsby"
 import HomeIcon from 'react-icons/lib/fa/home'
 import TagsIcon from 'react-icons/lib/fa/tags'
 
