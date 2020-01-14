@@ -1,8 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from "gatsby"
 import styled from 'styled-components'
 import BackIcon from 'react-icons/lib/fa/chevron-left'
 import ForwardIcon from 'react-icons/lib/fa/chevron-right'
+
+import Layout from '../layouts/index';
 
 import Link from '../components/Link'
 import Hero from '../components/Hero'
@@ -61,44 +64,46 @@ const NavLinkText = styled.div`
   }
 `
 
-export default function Template({ data, pageContext }) {
+export default function Template({ data, pageContext, location }) {
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
   const image = post.frontmatter.image.childImageSharp.resize.src
   return (
-    <div id="blog-post-container">
-      <Helmet title={`Partiallogic - ${post.frontmatter.title}`} />
-      <Hero image={image} />
-      <div className="content-container">
-        <div className="blog-post content">
-          <PostTitle id="title">{post.frontmatter.title}</PostTitle>
-          <PostDate className="date">{post.frontmatter.date}</PostDate>
-          <PostContent
-            id="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-          {/* <Tags list={post.frontmatter.tags || []} /> */}
-          <div className="navigation">
-            {prev && (
+    <Layout location={location}>
+      <div id="blog-post-container">
+        <Helmet title={`Partiallogic - ${post.frontmatter.title}`} />
+        <Hero image={image} />
+        <div className="content-container">
+          <div className="blog-post content">
+            <PostTitle id="title">{post.frontmatter.title}</PostTitle>
+            <PostDate className="date">{post.frontmatter.date}</PostDate>
+            <PostContent
+              id="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+            {/* <Tags list={post.frontmatter.tags || []} /> */}
+            <div className="navigation">
+              {prev && (
               <LinkPrev to={prev.frontmatter.path}>
                 <BackIcon />
                 <NavLinkText>{prev.frontmatter.title}</NavLinkText>
               </LinkPrev>
             )}
-            {next && (
+              {next && (
               <LinkNext to={next.frontmatter.path}>
                 <NavLinkText>{next.frontmatter.title}</NavLinkText>
                 <ForwardIcon />
               </LinkNext>
             )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
-export const pageQuery = ({ graphql }) =>
+export const pageQuery = () =>
   graphql`
     query BlogPostByPath($path: String!) {
       markdownRemark(frontmatter: { path: { eq: $path } }) {
