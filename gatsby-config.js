@@ -53,18 +53,7 @@ module.exports = {
         theme_color: '#2077b2',
         orientation: 'portrait',
         display: 'minimal-ui',
-        icons: [
-          {
-            src: '/logos/logo-192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/logos/logo-512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+        icon: 'static/favicon.png',
       },
     },
   ],
