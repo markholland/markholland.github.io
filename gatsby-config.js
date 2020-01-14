@@ -33,7 +33,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
