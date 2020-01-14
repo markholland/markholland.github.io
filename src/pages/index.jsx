@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { graphql } from "gatsby"
+
 import Link from '../components/Link'
+
+import Layout from '../layouts/index';
 
 import '../scss/index.scss'
 import '../scss/content-container.scss'
@@ -31,12 +35,13 @@ const PostTitle = styled.h1`
   }
 `
 
-export default function Index({ data }) {
+export default function Index({ data, location }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <div className="content-container">
-      <div className="content">
-        {posts
+    <Layout location={location}>
+      <div className="content-container">
+        <div className="content">
+          {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => (
             <PostPreview id="blog-post-preview" key={post.id}>
@@ -50,12 +55,13 @@ export default function Index({ data }) {
                 </PostDate> */}
             </PostPreview>
           ))}
+        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
-export const pageQuery = ({ graphql }) =>
+export const pageQuery = () =>
   graphql`
     query IndexQuery {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
