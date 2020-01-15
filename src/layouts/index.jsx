@@ -24,11 +24,11 @@ const SiteContent = styled.div`
 
 export default class Template extends React.Component {
   static propTypes = {
-    children: PropTypes.func,
+    children: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   }
 
   static defaultProps = {
-    children: () => {},
+    children: {},
   }
 
   render() {
@@ -61,7 +61,7 @@ export default class Template extends React.Component {
         />
         <Header />
         {hero}
-        <SiteContent>{this.props.children()}</SiteContent>
+        <SiteContent>{this.props.children}</SiteContent>
         <Footer />
       </SiteWrapper>
     )

@@ -1,12 +1,12 @@
 import React from 'react'
-import GatsbyLink from 'gatsby-link'
+import { Link as GatsbyLink } from "gatsby"
 import HomeIcon from 'react-icons/lib/fa/home'
 import TagsIcon from 'react-icons/lib/fa/tags'
 
 import Link from '../components/Link'
 
-export default function Tags({ pathContext }) {
-  const { posts, post, tag } = pathContext
+export default function Tags({ pageContext }) {
+  const { posts, post, tag } = pageContext
   if (tag) {
     return (
       <div>
