@@ -1,3 +1,12 @@
+get-cache: &get-cache
+  restore_cache:
+    key: dependencies-{{ checksum "package.json" }}
+save-cache: &save-cache
+  save_cache:
+    paths:
+      - node_modules
+    key: dependencies-{{ checksum "package.json" }}
+    
 version: 2
 jobs:
   build:
@@ -23,11 +32,3 @@ jobs:
               yarn deploy:surge
             fi
 
-get-cache: &get-cache
-  restore_cache:
-    key: dependencies-{{ checksum "package.json" }}
-save-cache: &save-cache
-  save_cache:
-    paths:
-      - node_modules
-    key: dependencies-{{ checksum "package.json" }}
