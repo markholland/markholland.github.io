@@ -25,7 +25,7 @@ export default function Social(props) {
   return (
     <div>
       <SocialLink
-        href="https://twitter.com/partialmark"
+        href="https://twitter.com/_markholland"
         title="Follow on Twitter"
         target="_blank"
         rel="noopener noreferrer"
