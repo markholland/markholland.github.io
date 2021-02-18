@@ -12,5 +12,5 @@ const Container = styled.footer`
 `
 
 export default function Footer() {
-  return <Container id="footer-container">© 2020 Mark Holland</Container>
+  return <Container id="footer-container">© 2021 Mark Holland</Container>
 }
