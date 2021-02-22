@@ -6,7 +6,7 @@ const createTagPages = (createPage, edges) => {
 
   edges.forEach(({ node }) => {
     if (node.frontmatter.tags) {
-      node.frontmatter.tags.forEach(tag => {
+      node.frontmatter.tags.forEach((tag) => {
         if (!posts[tag]) {
           posts[tag] = []
         }
@@ -23,7 +23,7 @@ const createTagPages = (createPage, edges) => {
     },
   })
 
-  Object.keys(posts).forEach(tagName => {
+  Object.keys(posts).forEach((tagName) => {
     const post = posts[tagName]
     createPage({
       path: `/tags/${tagName}`,
@@ -63,7 +63,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
