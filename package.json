@@ -16,7 +16,7 @@
     "start": "npm run develop",
     "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.jsx\"",
     "test": "echo \"Should probably write some tests!\"",
-    "lint": "npm run lint:js && npm run lint:md && npm run lint:style",
+    "lint": "npm run lint:js && npm run lint:md",
     "lint:js": "eslint .",
     "lint:md": "remark posts/",
     "lint:style": "stylelint src/**/*.scss",
