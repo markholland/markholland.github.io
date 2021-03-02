@@ -10,7 +10,7 @@ const Container = styled.div`
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.title || props.subTitle ? 'rgba(0, 0, 0, 0.3)' : 'rgba(0, 0, 0, 0)'};
   &:before {
     content: '';

@@ -1,11 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import BackIcon from 'react-icons/lib/fa/chevron-left'
-import ForwardIcon from 'react-icons/lib/fa/chevron-right'
+import {FaChevronLeft as BackIcon,FaChevronRight as ForwardIcon} from 'react-icons/fa'
 
-import Layout from '../layouts/index';
+
+import Layout from '../layouts/index'
 
 import Link from '../components/Link'
 import Hero from '../components/Hero'
@@ -84,17 +84,17 @@ export default function Template({ data, pageContext, location }) {
             {/* <Tags list={post.frontmatter.tags || []} /> */}
             <div className="navigation">
               {prev && (
-              <LinkPrev to={prev.frontmatter.path}>
-                <BackIcon />
-                <NavLinkText>{prev.frontmatter.title}</NavLinkText>
-              </LinkPrev>
-            )}
+                <LinkPrev to={prev.frontmatter.path}>
+                  <BackIcon />
+                  <NavLinkText>{prev.frontmatter.title}</NavLinkText>
+                </LinkPrev>
+              )}
               {next && (
-              <LinkNext to={next.frontmatter.path}>
-                <NavLinkText>{next.frontmatter.title}</NavLinkText>
-                <ForwardIcon />
-              </LinkNext>
-            )}
+                <LinkNext to={next.frontmatter.path}>
+                  <NavLinkText>{next.frontmatter.title}</NavLinkText>
+                  <ForwardIcon />
+                </LinkNext>
+              )}
             </div>
           </div>
         </div>

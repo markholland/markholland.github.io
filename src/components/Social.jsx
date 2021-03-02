@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import '../scss/icons.css.scss'
 
 const SocialLink = styled.a`
-  color: ${props => props.color || '#fff'};
+  color: ${(props) => props.color || '#fff'};
   width: 36px;
   height: 36px;
-  border: 2px solid ${props => props.color || '#fff'};
+  border: 2px solid ${(props) => props.color || '#fff'};
   display: inline-block;
   margin: 0 10px;
   border-radius: 42px;
@@ -17,7 +17,7 @@ const SocialLink = styled.a`
   transition: color 175ms ease-in-out, transform 175ms ease-in-out;
   &:hover {
     transform: scale(1.2);
-    color: ${props => (props.hoverColor ? props.hoverColor : '#fff')};
+    color: ${(props) => (props.hoverColor ? props.hoverColor : '#fff')};
   }
 `
 

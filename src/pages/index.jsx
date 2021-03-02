@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 
 import Link from '../components/Link'
 
-import Layout from '../layouts/index';
+import Layout from '../layouts/index'
 
 import '../scss/index.scss'
 import '../scss/content-container.scss'
@@ -42,19 +42,21 @@ export default function Index({ data, location }) {
       <div className="content-container">
         <div className="content">
           {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => (
-            <PostPreview id="blog-post-preview" key={post.id}>
-              <PostTitle id="blog-post-title">
-                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-              </PostTitle>
-              <p>{post.excerpt}</p>
-              <Link to={post.frontmatter.path}>Read more</Link>
-              {/* <PostDate id="date">
+            .filter((post) => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => (
+              <PostPreview id="blog-post-preview" key={post.id}>
+                <PostTitle id="blog-post-title">
+                  <Link to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </PostTitle>
+                <p>{post.excerpt}</p>
+                <Link to={post.frontmatter.path}>Read more</Link>
+                {/* <PostDate id="date">
                   {post.frontmatter.date}
                 </PostDate> */}
-            </PostPreview>
-          ))}
+              </PostPreview>
+            ))}
         </div>
       </div>
     </Layout>

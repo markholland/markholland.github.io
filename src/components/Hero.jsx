@@ -12,7 +12,7 @@ const HeroImage = styled.div`
   background-color: #111;
   background-size: cover;
   background-position: center center;
-  background-image: url(${props => props.image});
+  background-image: url(${(props) => props.image});
   @media only screen and (max-width: 720px) {
     height: 200px;
   }

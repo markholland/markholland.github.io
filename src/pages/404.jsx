@@ -2,6 +2,8 @@ import React from 'react'
 
 import Hero from '../components/Hero'
 
-import NotFound from '../../static/404.jpg'
+import NotFoundImage from '../../static/404.jpg'
 
-export default () => <Hero image={NotFound} />
+const NotFound = () => <Hero image={NotFoundImage} />
+
+export default NotFound;

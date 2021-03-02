@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link as GatsbyLink } from "gatsby"
-import HomeIcon from 'react-icons/lib/fa/home'
-import TagsIcon from 'react-icons/lib/fa/tags'
+import { Link as GatsbyLink } from 'gatsby'
+import {FaHome as HomeIcon} from 'react-icons/fa'
+import {FaTags as TagsIcon} from 'react-icons/fa'
 
 import Link from '../components/Link'
 
@@ -36,7 +36,7 @@ export default function Tags({ pageContext }) {
     <div>
       <h1>Tags</h1>
       <ul className="tags">
-        {Object.keys(posts).map(tagName => (
+        {Object.keys(posts).map((tagName) => (
           <li key={tagName}>
             <GatsbyLink to={`/tags/${tagName}`}>{tagName}</GatsbyLink>
           </li>
