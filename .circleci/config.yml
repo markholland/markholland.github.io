@@ -16,19 +16,19 @@ jobs:
     steps:
       - checkout
       - <<: *get-cache
-      - run: yarn install
+      - run: npm install
       - <<: *save-cache
-      # - run: yarn lint
-      - run: yarn test
-      - run: yarn build
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
       - run:
           command: |
             if [ $CIRCLE_BRANCH = 'master' ]; 
             then 
               git config --global user.email $GH_EMAIL
               git config --global user.name $GH_NAME
-              yarn deploy;
+              npm run deploy;
             else
-              yarn deploy:surge
+              npm run deploy:surge
             fi
 
