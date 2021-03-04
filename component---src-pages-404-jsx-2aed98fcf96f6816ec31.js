@@ -1,0 +1,2 @@
+(self.webpackChunkpartiallogic_com=self.webpackChunkpartiallogic_com||[]).push([[256],{6238:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return r}});var c=a(7294),n=a(6110),i=a.p+"static/404-d177376fb0653dba4eb1fd8dbd71b2db.jpg",r=function(){return c.createElement(n.Z,{image:i})}}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-2aed98fcf96f6816ec31.js.map
