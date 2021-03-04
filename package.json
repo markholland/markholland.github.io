@@ -9,7 +9,7 @@
     "build": "npm run clean && gatsby build",
     "clean": "rm -rf public/*.html",
     "deploy": "gatsby build && echo 'www.partiallogic.com' > ./public/CNAME && gh-pages -m ‘auto commit [ci skip]’ -d ./public",
-    "deploy:surge": "npm run build && surge --domain partiallogic.surge.sh public/",
+    "deploy:surge": "npm run build && surge public/ partiallogic.surge.sh",
     "develop": "gatsby develop",
     "preserve": "npm run build",
     "serve": "gatsby serve",
