@@ -5,6 +5,7 @@ module.exports = {
     title: `Partiallogic`,
   },
   plugins: [
+    'gatsby-plugin-postcss',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-styled-components',
     {
